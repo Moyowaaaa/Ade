@@ -17,10 +17,10 @@ const Loading = () => {
     }
 
     useEffect(() => {
-      const ctx = gsap.context(() => {
+      // const ctx = gsap.context(() => {
         handleAnimation()
-      })
-      return () => ctx.revert();
+      // })
+      // return () => ctx.revert();
     })
 
   return (

@@ -18,7 +18,7 @@ const HeroSection = () => {
           opacity:0,
         })
       })
-      return () => ctx.revert();
+      
     }, [])
 
 
