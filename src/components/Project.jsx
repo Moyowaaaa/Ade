@@ -1,11 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import droves from '../images/droves.png'
-import bstop from '../images/bstop.png'
-import codeCampus from '../images/codecampus.png'
-import geenAfrica from '../images/green.png'
-import easy from '../images/green.png'
-import SnoozeOff from '../images/snoozeOff.png'
-import ProjectDetails from './ProjectDetails'
+
 import { gsap } from 'gsap'
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
