@@ -21,7 +21,7 @@ const Loading = () => {
         handleAnimation()
       // })
       // return () => ctx.revert();
-    })
+    },[])
 
   return (
     <div className='loader h-screen z-50 absolute w-full bg-[#222222] flex items-center justify-center '>
