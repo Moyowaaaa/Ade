@@ -27,11 +27,9 @@
 }
 
 @media screen and (max-width:600px) {
-  .app {
-      scroll-snap-type: y mandatory;
-      height: 100vh;
-      overflow-y: scroll;
-    }
+  body{
+    scroll-behavior:none
+  }
 }
 
 body{
