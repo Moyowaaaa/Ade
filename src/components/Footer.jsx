@@ -26,7 +26,7 @@ const Footer = () => {
   //       opacity: 1, y:"100%", duration:.2, stagger:.4
   //     })
   //   })
-  //   return () => ctx.revert();
+  //   
   // })
   
 

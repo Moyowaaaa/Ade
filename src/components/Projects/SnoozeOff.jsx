@@ -1,18 +1,46 @@
-import React from 'react'
+import React, { useRef, useState,useEffect } from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import snoozeOff from '../../images/snoozeoff.png'
+import useIntersectionObserver from '../../hooks/useIntersectionObserver'
+import { gsap } from "gsap";
 
 const SnoozeOff = () => {
+  const pageRef = useRef(null)
+  const [reveal, setReveal] = useState(false);
+  const onScreen = useIntersectionObserver(pageRef, 0.125)
+  const TextRef = useRef(null)
+  const ImageRef = useRef(null)
+
+  // useEffect(() => {
+  //   if (onScreen) setReveal(onScreen)
+  // }, [onScreen])
+
+  // useEffect(() => {
+  //   if(onScreen && reveal) {
+  //     const tl = gsap.timeline()
+  //   const ctx = gsap.context(() => {
+  //     tl.fromTo(TextRef.current, { opacity:0 },
+  //     { y: 0, duration:0.5, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" })
+  //     .from(ImageRef.current, { duration:0.5, ease:"power3.inOut", scale:2.5, opacity:0}, "<0.1");
+
+  //    })
+  //     return () => ctx.revert();
+      
+  //   }
+  // }, [onScreen])
+
+
+
   return (
-    <div className="flex min-h-screen h-screen flex-col   w-[100vw] " data-scroll-section>
+    <div className="flex min-h-screen h-screen flex-col   w-[100vw] " data-scroll-section ref={pageRef}>
         <div className="flex w-full  h-full flex-col-reverse lg:flex-row">
 
             <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
                 <Navbar />
                 <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 '>
-                  <div className='flex flex-col gap-4'>
+                  <div className=' flex flex-col gap-4' ref={TextRef}>
                 <h2 className='text-4xl underline lg:no-underline'>Mobile App</h2>
         <h1 className='text-6xl font-bold font-[avenir-black]'>SnoozeOff</h1>
   
@@ -34,7 +62,7 @@ const SnoozeOff = () => {
             </div>
 
 
-            <div className="flex flex-col w-full  lg:w-6/12  ">
+            <div className="flex flex-col w-full  lg:w-6/12  " ref={ImageRef}>
                 <img src={snoozeOff} />
 
 

@@ -11,14 +11,14 @@ const HeroSection = () => {
 
 
     useEffect(() => {
-      const ctx = gsap.context(() => {
+      // const ctx = gsap.context(() => {
         tl.from('.heroSection', {
           y:200,
           duration:0.5,
           opacity:0,
         })
-      })
-      
+      // })
+      // return () => ctx.revert();
     }, [])
 
 

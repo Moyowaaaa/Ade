@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import portfolio from '../images/portfolio.png'
@@ -7,6 +7,7 @@ import twitter from '../images/twitter.svg'
 import behance from '../images/behance.svg'
 import mail from '../images/mail.svg'
 import { gsap } from 'gsap'
+import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 
 
@@ -15,7 +16,31 @@ const Contact = () => {
   const contactPageRef = useRef()
   const socialRef = useRef(null)
   const box = useRef(null)
- 
+
+  const [reveal, setReveal] = useState(false);
+  const onScreen = useIntersectionObserver(contactPageRef, 0.125)
+
+  useEffect(() => {
+    if (onScreen) setReveal(onScreen)
+    console.log('contact page is on scren',onScreen)
+  }, [onScreen])
+
+  useEffect(() => {
+    if(onScreen && reveal) {
+      const tl = gsap.timeline()
+      const ctx = gsap.context(() => {
+        tl.from(socialRef.current, {
+              x:-600,
+              y:200,
+              ease:"power3.inOut",
+              duration:1
+              // delay:3.2
+            })
+      })
+      return () => ctx.revert();
+    }
+  },[onScreen])
+
 
   // useEffect(() => {
 
