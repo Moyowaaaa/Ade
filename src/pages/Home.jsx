@@ -39,7 +39,7 @@ const Home = () => {
     useEffect(() => {
       id.current = window.setInterval(() => {
         setTimer((timer) => timer -1)
-      }, 3000)
+      }, 1500)
     },[])
   
     useEffect(() => {

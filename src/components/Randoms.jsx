@@ -12,7 +12,7 @@ const Randoms = () => {
   <Navbar />
     <div className='h-full w-full  flex flex-col justify-center '>
     <div className='hero flex flex-col gap-4 lg:ml-16'>
-    <h1 className='text-6xl font-bold font-[avenir-black]'>Randoms</h1>
+    <h1 className='text-6xl font-bold font-[avenir-black] underline lg:no-underline'>Randoms</h1>
 
         </div>
 
