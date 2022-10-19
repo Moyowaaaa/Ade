@@ -19,23 +19,30 @@ const MobileNav = () => {
                 setIsScrolled(false)
             }
         }
+
+
         window.addEventListener('scroll',handleScroll)
-              return () => {
+
+      
+        
+
+        return () => {
             window.removeEventListener('scroll',handleScroll)
         }
-    },[])
+    })
+
     
 
 
   return (
     
-      <div className='lg:hidden z-50 bg-[#0a192f] text-[white]' data-scroll-section>
+      <div className={`lg:hidden z-50 bg-[#0a192f] text-[white] ${isScrolled? 'bg-[black]' : 'bg-transparent'}`} data-scroll-section>
         
         
   
 
 
-        <div className={`flex w-full lg:hidden fixed p-6 items-center  justify-between font-[avenir-medium]  ${isScrolled? 'bg-[#222222] shadow-md z-50' : 'bg-transparent'}`}>
+        <div className={`flex w-full lg:hidden fixed p-6 items-center  justify-between font-[avenir-medium]   ${isScrolled? 'bg-[black]' : 'bg-transparent'}`}>
 
 
     <a href='#home' data-scroll-to>
