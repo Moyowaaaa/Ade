@@ -1,11 +1,19 @@
 
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import kebab from '../images/kebab.svg'
+import close from '../images/close.svg'
+import useOnClickOutside from '../hooks/useOnClickOutside'
 
 
 const MobileNav = () => {
     const [openMenu,setOpenMenu] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
+    const ref = useRef()
+    
+
+    useOnClickOutside(ref, () => setOpenMenu(false))
+
+
 
     const closeMenu = () => {
         setOpenMenu(false)
@@ -36,7 +44,7 @@ const MobileNav = () => {
 
   return (
     
-      <div className={`lg:hidden z-50 bg-[#0a192f] text-[white] ${isScrolled? 'bg-[black]' : 'bg-transparent'}`} data-scroll-section>
+      <div className={`lg:hidden z-50 bg-[#0a192f] text-[white] ${isScrolled? 'bg-[black]' : 'bg-transparent'}`} data-scroll-section ref={ref}>
         
         
   

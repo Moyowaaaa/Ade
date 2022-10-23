@@ -40,7 +40,9 @@ const SnoozeOff = () => {
             <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
                 <Navbar />
                 <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 '>
-                  <div className=' flex flex-col gap-4' ref={TextRef}>
+                  <div className=' flex flex-col gap-4' ref={TextRef} data-scroll
+						data-scroll-direction="horizontal"
+						>
                 <h2 className='text-4xl underline lg:no-underline'>Mobile App</h2>
         <h1 className='text-6xl font-bold font-[avenir-black]'>SnoozeOff</h1>
   

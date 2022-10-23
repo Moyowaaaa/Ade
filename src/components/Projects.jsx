@@ -12,13 +12,21 @@ const Projects = () => {
   const ref = useRef(null)
 
   const [reveal, setReveal] = useState(false);
-  const onScreen = useIntersectionObserver(ref, 0.125)
+  const onScreen = useIntersectionObserver(ref, 0.1)
   const ProjectRef= useRef(null)
 
+  console.log('window',window.innerWidth)
+
+  let offset = (window.innerWidth / 100) * -6
+
+  console.log(offset)
+ 
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen)
   }, [onScreen])
+
+  console.log('Project page is on screen:', onScreen)
 
 
   useEffect(() => {
@@ -34,6 +42,8 @@ const Projects = () => {
       
     }
   }, [onScreen])
+
+  
 
 
 

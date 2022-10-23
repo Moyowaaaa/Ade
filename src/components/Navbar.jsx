@@ -2,11 +2,16 @@
 import React, { useEffect, useRef, useState } from 'react'
 import kebab from '../images/kebab.svg'
 import { gsap } from 'gsap'
+import close from '../images/close.svg'
+import useOnClickOutside from '../hooks/useOnClickOutside'
 
 
 const Navbar = () => {
     const [openMenu,setOpenMenu] = useState(false)
+    const ref = useRef()
     const kebabRef = useRef()
+
+    useOnClickOutside(ref, () => setOpenMenu(false))
 
     const closeMenu = () => {
         setOpenMenu(false)
@@ -30,7 +35,7 @@ const Navbar = () => {
     
 
   return (
-    <div className='hidden lg:flex w-full '>
+    <div className='hidden lg:flex w-full ' ref={ref}>
     <div className='flex w-full   justify-between font-[avenir-medium] '>
 
     <a href='#home' data-scroll-to>
@@ -77,7 +82,7 @@ const Navbar = () => {
 </div>
 
 
-<button className=' z-50 text-lg' onClick={closeMenu}>X</button>
+<button className=' z-50 text-lg' onClick={closeMenu}><img src={close}/></button>
 
 
 </div>
