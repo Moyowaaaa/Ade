@@ -75,6 +75,10 @@ const MobileNav = () => {
       <div className='w-full h-4/6 lg:hidden'>
         <div className=' flex flex-col h-full items-center justify-center gap-8' >
 
+        <a href='#home'>
+        <p onClick={closeMenu} className={`hover:border-b-2 border-[#46b1a0] `}>Home</p>
+        </a>
+
        
           <a href='#projects'>
         <p onClick={closeMenu} className={`hover:border-b-2 border-[#46b1a0] `}>Projects</p>

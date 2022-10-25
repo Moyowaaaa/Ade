@@ -40,15 +40,15 @@ const Bstop = () => {
         <div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">
             <Navbar />
             <div className='hero flex flex-col gap-4 lg:ml-16 h-full w-full justify-center px-2 lg:px-0 ' ref={TextRef}>
-            <h2 className='text-4xl underline lg:no-underline'>Case Study</h2>
-    <h1 className='text-6xl font-bold font-[avenir-black] '>Bstop</h1>
+            <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Case Study</h2>
+    <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black] '>Bstop</h1>
     <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-8/12'>
     A case study of an alert mobile application that lets users set alarms<br/> based on their destination with the aim of letting them rest while in <br/> transit without missing their bus stops.</p>
 
-    <p className=' lg:hidden font-[avenir-light] w-full lg:w-8/12 text-justify '>
+    <p className=' lg:hidden font-[avenir-light] w-full text-justify text-base'>
     A case study of an alert mobile application that lets users set alarms based on their destination with the aim of letting them rest while in transit without missing their bus stops.</p>
 
-    <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black]'>
+    <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 
         <img src={rightArrow} alt="right arrow"/>
