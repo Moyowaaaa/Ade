@@ -49,13 +49,16 @@ const SnoozeOff = () => {
         <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-8/12 '>Mobile alarm app, designed with simplicity and ease of use in mind.<br/>Almost all needed functions of the app are in one screen.</p>
 
         <p className='lg:hidden font-[avenir-light] w-full text-justify text-base '>Mobile alarm app, designed with simplicity and ease of use in mind.Almost all needed functions of the app are in one screen.</p>
-    
+
+        <a href='https://www.behance.net/gallery/140830051/Alarm-App' target="_blank" rel="noreferrer" >
         <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
            View Project
+
 
             <img src={rightArrow} alt="right arrow"/>
 
          </button>
+         </a>
             </div>
             </div>
 

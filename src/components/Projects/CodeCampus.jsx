@@ -49,12 +49,15 @@ const CodeCampus = () => {
 
     <p className='lg:hidden font-[avenir-light] w-full text-justify'>
     CodeCampus is an online platform for learning the latest technologies in the world. This is a landing page that give a potential candidate  necessary information needed on available courses and pricing.</p>
+   
+   <a href='https://www.behance.net/gallery/138799399/Code-Campus' target="_blank" rel="noreferrer" >
     <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 
         <img src={rightArrow} alt="right arrow"/>
 
      </button>
+     </a>
         </div>
 
 

@@ -50,12 +50,15 @@ const Easy = () => {
 
     <p className=' lg:hidden font-[avenir-light] w-full text-justify'>
     Landing page for a finance management application company. The application grants the user the freedom of control and the comfort of security of hi/her finances.</p>
+   
+   <a href='https://www.behance.net/gallery/141384163/Finance-App-Website-%28FULL%29' target="_blank" rel="noreferrer" >
     <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 
         <img src={rightArrow} alt="right arrow"/>
 
      </button>
+     </a>
         </div>
 
 

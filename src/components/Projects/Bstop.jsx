@@ -48,12 +48,14 @@ const Bstop = () => {
     <p className=' lg:hidden font-[avenir-light] w-full text-justify text-base'>
     A case study of an alert mobile application that lets users set alarms based on their destination with the aim of letting them rest while in transit without missing their bus stops.</p>
 
+    <a href='https://www.behance.net/gallery/144012555/Bstop-UIUX-Case-Study' target="_blank" rel="noreferrer" >
     <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 
         <img src={rightArrow} alt="right arrow"/>
 
      </button>
+     </a>
         </div>
 
 
