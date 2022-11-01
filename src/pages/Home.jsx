@@ -18,6 +18,7 @@ import FeetWings from '../components/Randoms/FeetWings'
 import Portfoilio from '../components/Randoms/Portfoilio'
 import Contact from '../components/Contact'
 import MobileNav from '../components/MobileNav'
+import Rebank from '../components/Projects/Rebank'
 
 
 
@@ -66,6 +67,7 @@ const Home = () => {
         <SnoozeOff />
         <Bstop />
         <CodeCampus />
+        <Rebank />
         <Easy/>
         <GreenAfrica/>
         <Drooves />
