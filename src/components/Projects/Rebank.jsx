@@ -35,7 +35,7 @@ challenge. </p>
     Relume Design Challenge. Own design with assets from the design 
 challenge.</p>
    
-   <a href='https://www.behance.net/gallery/138799399/Code-Campus' target="_blank" rel="noreferrer" >
+   <a href='https://www.behance.net/gallery/155887615/Rebank-Landing-Page-%28-Relume-Design-Challenge%29' target="_blank" rel="noreferrer" >
     <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 

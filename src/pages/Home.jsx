@@ -58,7 +58,7 @@ const Home = () => {
       preloader ? (  
         <Loading/>
       ) : (
-        <div className='scroll-container' ref={containerRef} data-scroll-container id="main-container">
+        <div className='app scroll-container' ref={containerRef} data-scroll-container id="main-container">
           <MobileNav />
         <HeroSection />
         
