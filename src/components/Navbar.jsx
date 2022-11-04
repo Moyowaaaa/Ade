@@ -59,23 +59,23 @@ const Navbar = () => {
 
 <div className='flex gap-4 '>
 
-  <a href='#home' data-scroll-to  onClick={() => {setOpenMenu(false)}}>
+  <a href='#home'   onClick={() => {setOpenMenu(false)}}>
   <p className='link'>Home</p>
 
   </a>
 
 
-<a href='#projects' data-scroll-to onClick={() => {setOpenMenu(false)}}>
+<a href='#projects'  onClick={() => {setOpenMenu(false)}}>
 
 <p className='link'>Projects</p>
 </a>
 
-<a href='#randoms' data-scroll-to onClick={() => {setOpenMenu(false)}}>
+<a href='#randoms'  onClick={() => {setOpenMenu(false)}}>
 <p className='link'>Randoms</p>
 
 </a>
 
-<a href='#contact' data-scroll-to onClick={() => {setOpenMenu(false)}}>
+<a href='#contact'  onClick={() => {setOpenMenu(false)}}>
 <p  className='link'>Contact</p>
 </a>
 

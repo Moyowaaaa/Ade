@@ -67,7 +67,7 @@ const Home = () => {
         {/* <Project /> */}
         <SnoozeOff />
         <Bstop />
-        <CodeCampus />
+        {/* <CodeCampus /> */}
         <Rebank />
         <Easy/>
         <GreenAfrica/>
