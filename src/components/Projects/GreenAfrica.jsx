@@ -33,7 +33,7 @@ const GreenAfrica = () => {
 
 
   return (
-    <div className="flex py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
+    <div className="section flex py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
 
             <div className="flex  flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">
@@ -41,7 +41,7 @@ const GreenAfrica = () => {
                 <div className='hero flex flex-col gap-4 lg:ml-16 h-full w-full justify-center  px-2 lg:px-0 'ref={TextRef}>
                 <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Mobile App</h2>
         <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>Green Africa</h1>
-        <p className='hidden lg:flex font-[avenir-light] w-10/12 w-8/12'>
+        <p className='hidden lg:flex font-[avenir-light] w-10/12 w-11/12'>
         Mobile app inspired by the green africa airline website, for flight <br/> booking and reservations.
         </p>
 

@@ -6,7 +6,7 @@ import portfolio from '../../images/portfolio.png'
 
 const Portfoilio = () => {
   return (
-    <div className='main flex min-h-screen h-screen flex-col  w-[100vw]' data-scroll-section>
+    <div className='section main flex min-h-screen h-screen flex-col  w-[100vw]' data-scroll-section>
     <div className='px-10 py-6 '>
     <Navbar />
 

@@ -34,7 +34,7 @@ const SnoozeOff = () => {
 
 
   return (
-    <div className="flex min-h-screen h-screen flex-col   w-[100vw] " data-scroll-section ref={pageRef}>
+    <div className="section flex min-h-screen h-screen flex-col   w-[100vw] " data-scroll-section ref={pageRef} id="snoozeOff">
         <div className="flex w-full  h-full flex-col-reverse lg:flex-row">
 
             <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
@@ -46,7 +46,7 @@ const SnoozeOff = () => {
                 <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Mobile App</h2>
         <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>SnoozeOff</h1>
   
-        <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-8/12 '>Mobile alarm app, designed with simplicity and ease of use in mind.<br/>Almost all needed functions of the app are in one screen.</p>
+        <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-11/12 '>Mobile alarm app, designed with simplicity and ease of use in mind.<br/>Almost all needed functions of the app are in one screen.</p>
 
         <p className='lg:hidden font-[avenir-light] w-full text-justify text-base '>Mobile alarm app, designed with simplicity and ease of use in mind.Almost all needed functions of the app are in one screen.</p>
 

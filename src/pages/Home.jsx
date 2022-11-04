@@ -27,8 +27,8 @@ const Home = () => {
     const [timer,setTimer] = useState(2)
     const id = useRef(null)
     const containerRef = useRef(null)
-    const [scroll, setScroll] = useState();
-    useLocoScroll(!preloader)
+    const [scroll, setScroll] = useState(500);
+    // useLocoScroll(!preloader)
   
   
     const clear = () => {
@@ -58,11 +58,12 @@ const Home = () => {
       preloader ? (  
         <Loading/>
       ) : (
-        <div className='scroll-container' ref={containerRef} data-scroll-container id="main-container">
+        <div className='outer-wrapper scroll-container' ref={containerRef} data-scroll-container id="main-container">
+          <div className='wrapper'>
           <MobileNav />
         <HeroSection />
         
-        <Projects />
+        <Projects scroll={scroll} />
         {/* <Project /> */}
         <SnoozeOff />
         <Bstop />
@@ -77,6 +78,7 @@ const Home = () => {
         <Portfoilio />
         <Contact />
         {/* <Project /> */}
+        </div>
           </div>
 )
     }

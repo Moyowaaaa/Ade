@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Randoms = () => {
   return (
-    <div className='main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' data-scroll-section id="randoms">
+    <div className='section main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' data-scroll-section id="randoms">
   <Navbar />
     <div className='h-full w-full  flex flex-col justify-center '>
     <div className='hero flex flex-col gap-4 lg:ml-16'>

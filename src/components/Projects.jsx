@@ -51,7 +51,7 @@ const Projects = () => {
 
 
   return (
-    <div className='main flex lg:min-h-screen h-[15rem] lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' id="projects"  data-scroll-section>
+    <div className='section main flex lg:min-h-screen h-[15rem] lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' id="projects"  data-scroll-section>
       <Navbar />
         <div className='h-full w-full  flex flex-col lg:justify-center ' ref={ref}>
         <div className='hero flex flex-col gap-4 lg:ml-16' ref={ProjectRef}>

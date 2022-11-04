@@ -57,7 +57,7 @@ const Navbar = () => {
 <h1 className='text-lg link'>SA</h1>
 
 
-<div className='flex gap-4'>
+<div className='flex gap-4 '>
 
   <a href='#home' data-scroll-to  onClick={() => {setOpenMenu(false)}}>
   <p className='link'>Home</p>

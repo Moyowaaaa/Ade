@@ -26,6 +26,33 @@
     url('./assets/fonts/Avenir-Medium.otf') format('opentype');
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  position: relative;
+}
+.outer-wrapper {
+  min-width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scroll-snap-type: y mandatory;
+
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start end;
+  scroll-snap-type: proximity;
+}
+
 .link {
   display: inline-block;
   padding-bottom:2px;

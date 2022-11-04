@@ -65,7 +65,7 @@ const Contact = () => {
   // })
 
   return (
-    <div className='flex min-h-screen h-screen flex-col  lg:px-10 py-4  w-[100vw]' id="contact" data-scroll-section ref={contactPageRef}>
+    <div className='section flex min-h-screen h-screen flex-col  lg:px-10 py-4  w-[100vw]' id="contact" data-scroll-section ref={contactPageRef}>
     <Navbar />
   
   
