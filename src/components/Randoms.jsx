@@ -6,10 +6,10 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 
 
-const Randoms = () => {
+const Randoms = ({openMenu,setOpenMenu}) => {
   return (
     <div className='section main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' data-scroll-section id="randoms">
-  <Navbar />
+  <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
     <div className='h-full w-full  flex flex-col justify-center '>
     <div className='hero flex flex-col gap-4 lg:ml-16'>
     <h1 className='text-6xl font-bold font-[avenir-black] underline lg:no-underline'>Randoms</h1>

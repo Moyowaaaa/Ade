@@ -27,6 +27,9 @@
 }
 
 @media screen and (min-width:1000px) {
+  html{
+    scroll-behavior: smooth;
+  }
   .wrapper {
     display: flex;
     flex-direction: row;

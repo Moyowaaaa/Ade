@@ -6,7 +6,7 @@ import bstop from '../../images/bstop.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from 'gsap'
 
-const Bstop = () => {
+const Bstop = ({openMenu, setOpenMenu}) => {
   const pageRef = useRef(null)
   const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(pageRef, 0.125)
@@ -38,7 +38,7 @@ const Bstop = () => {
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
 
         <div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">
-            <Navbar />
+            <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
             <div className='hero flex flex-col gap-4 lg:ml-16 h-full w-full justify-center px-2 lg:px-0 ' ref={TextRef}>
             <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Case Study</h2>
     <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black] '>Bstop</h1>

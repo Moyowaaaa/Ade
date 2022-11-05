@@ -6,7 +6,7 @@ import rightArrow from '../images/rightarrow.svg'
 import { gsap } from 'gsap'
 
 
-const HeroSection = () => {
+const HeroSection = ({openMenu,setOpenMenu}) => {
     const tl = gsap.timeline()
 
 
@@ -24,7 +24,7 @@ const HeroSection = () => {
 
   return (
  <div className='section flex min-h-screen h-screen flex-col lg:px-10 py-4  w-[100vw]' id="home" data-scroll-section>
-  <Navbar />
+  <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
 
   <div className='h-full w-full  flex flex-col justify-center py-2 px-4 lg:px-10 py-6'>

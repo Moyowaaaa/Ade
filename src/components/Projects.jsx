@@ -8,7 +8,7 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 
 
-const Projects = () => {
+const Projects = ({openMenu,setOpenMenu}) => {
   const ref = useRef(null)
 
   const [reveal, setReveal] = useState(false);
@@ -52,7 +52,7 @@ const Projects = () => {
 
   return (
     <div className='section main flex lg:min-h-screen h-[15rem] lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' id="projects"  data-scroll-section>
-      <Navbar />
+      <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
         <div className='h-full w-full  flex flex-col lg:justify-center ' ref={ref}>
         <div className='hero flex flex-col gap-4 lg:ml-16' ref={ProjectRef}>
         <h1 className='Header text-6xl font-bold font-[avenir-black] underline lg:no-underline'>Projects</h1>
