@@ -22,7 +22,7 @@ const Contact = ({openMenu,setOpenMenu}) => {
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen)
-    console.log('contact page is on scren',onScreen)
+    // console.log('contact page is on scren',onScreen)
   }, [onScreen])
 
   useEffect(() => {

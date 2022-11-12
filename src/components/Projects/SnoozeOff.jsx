@@ -41,8 +41,6 @@ const SnoozeOff = ({openMenu, setOpenMenu}) => {
     if (onScreen) setReveal(onScreen)
   }, [onScreen])
 
-  console.log('Project page is on screen:', onScreen)
-
 
 
   // useEffect(() => {
@@ -68,7 +66,7 @@ const SnoozeOff = ({openMenu, setOpenMenu}) => {
   return (
     <>
 
-      <div className="section flex min-h-screen h-screen flex-col z-50  w-[100vw] " data-scroll-section ref={pageRef} id="projects">
+      <div className="section flex min-h-screen h-screen flex-col z-50  w-[100vw] " data-scroll-section ref={pageRef} id="snoozeOff">
        
       <div className="flex w-full  h-full flex-col-reverse lg:flex-row">
 

@@ -31,7 +31,8 @@ const Home = () => {
     const containerRef = useRef(null)
     const [scroll, setScroll] = useState(500);
     // useLocoScroll(!preloader)
-  
+
+    
   
     const clear = () => {
       window.clearInterval(id.current);
@@ -53,8 +54,7 @@ const Home = () => {
 
     const [openMenu, setOpenMenu] = useState(false)
 
- 
-
+   
     
 
   return (

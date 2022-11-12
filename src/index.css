@@ -43,10 +43,10 @@
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-y: scroll;
+     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory; 
   
   }
   
