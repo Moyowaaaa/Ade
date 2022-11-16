@@ -27,6 +27,9 @@
 }
 
 @media screen and (min-width:1000px) {
+  body{
+    scroll-behavior:smooth
+  }
   html{
     scroll-behavior: smooth;
   }

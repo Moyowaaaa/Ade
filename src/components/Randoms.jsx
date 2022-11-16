@@ -12,7 +12,7 @@ const Randoms = ({openMenu,setOpenMenu}) => {
   const onScreen = useIntersectionObserver(ref,0.1)
 
   useEffect(() => {
-    if (onScreen) setTimeout(() =>  scrollToProject(),2000 )
+    if (onScreen) setTimeout(() =>  scrollToProject(),1700 )
 
     if(!onScreen) clearTimeout(scrollToProject)
     

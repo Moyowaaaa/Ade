@@ -32,7 +32,7 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
   useEffect(() => {
     if (onScreen) {setReveal(onScreen)
 
-      setTimeout(() =>  scrollToProject(),2000 )
+      setTimeout(() =>  scrollToProject(),1700 )
      
     }
 
