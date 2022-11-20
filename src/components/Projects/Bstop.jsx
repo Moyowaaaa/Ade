@@ -6,7 +6,7 @@ import bstop from '../../images/bstop.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from 'gsap'
 
-const Bstop = () => {
+const Bstop = ({openMenu, setOpenMenu}) => {
   const pageRef = useRef(null)
   const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(pageRef, 0.125)
@@ -34,15 +34,15 @@ const Bstop = () => {
 
 
   return (
-    <div className="flex   h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
+    <div className="section flex   h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
 
         <div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">
-            <Navbar />
+            <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
             <div className='hero flex flex-col gap-4 lg:ml-16 h-full w-full justify-center px-2 lg:px-0 ' ref={TextRef}>
             <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Case Study</h2>
     <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black] '>Bstop</h1>
-    <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-8/12'>
+    <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-11/12'>
     A case study of an alert mobile application that lets users set alarms<br/> based on their destination with the aim of letting them rest while in <br/> transit without missing their bus stops.</p>
 
     <p className=' lg:hidden font-[avenir-light] w-full text-justify text-base'>

@@ -12,7 +12,7 @@ import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 
 
-const Contact = () => {
+const Contact = ({openMenu,setOpenMenu}) => {
   const contactPageRef = useRef()
   const socialRef = useRef(null)
   const box = useRef(null)
@@ -22,7 +22,7 @@ const Contact = () => {
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen)
-    console.log('contact page is on scren',onScreen)
+    // console.log('contact page is on scren',onScreen)
   }, [onScreen])
 
   useEffect(() => {
@@ -65,8 +65,8 @@ const Contact = () => {
   // })
 
   return (
-    <div className='flex min-h-screen h-screen flex-col  lg:px-10 py-4  w-[100vw]' id="contact" data-scroll-section ref={contactPageRef}>
-    <Navbar />
+    <div className='section flex min-h-screen h-screen flex-col  lg:px-10 py-4  w-[100vw]' id="contact" data-scroll-section ref={contactPageRef}>
+    <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
   
   
     <div className='h-full w-full  flex flex-col justify-center items-center py-2  lg:px-10 py-6 gap-4'>

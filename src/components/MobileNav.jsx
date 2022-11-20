@@ -44,7 +44,7 @@ const MobileNav = () => {
 
   return (
     
-      <div className={`lg:hidden z-50 bg-[#0a192f] text-[white] ${isScrolled? 'bg-[black]' : 'bg-transparent'}`} data-scroll-section ref={ref}>
+      <div className={`lg:hidden z-[100] bg-[#0a192f] text-[white] ${isScrolled? 'bg-[black]' : 'bg-transparent'}`} data-scroll-section ref={ref}>
         
         
   

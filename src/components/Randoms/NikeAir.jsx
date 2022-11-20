@@ -4,11 +4,11 @@ import Navbar from '../Navbar'
 import Air from '../../images/air.png'
 
 
-const NikeAir = () => {
+const NikeAir = ({openMenu,setOpenMenu}) => {
   return (
-    <div className='main flex min-h-screen h-screen flex-col  w-[100vw]' data-scroll-section>
+    <div className='section  main flex min-h-screen h-screen flex-col  w-[100vw]' data-scroll-section id="nikeAir">
         <div className='px-10 py-6 '>
-        <Navbar />
+        <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
         </div>
         <div className=' w-full h-4/5 flex flex-col items-center justify-center bg-[#617E1B] py-2 object-contain'>

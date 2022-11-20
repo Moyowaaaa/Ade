@@ -19,6 +19,8 @@ import Portfoilio from '../components/Randoms/Portfoilio'
 import Contact from '../components/Contact'
 import MobileNav from '../components/MobileNav'
 import Rebank from '../components/Projects/Rebank'
+import NavLinks from '../components/NavLinks'
+import ProjectsLoading from '../components/ProjectsLoading'
 
 
 
@@ -27,9 +29,10 @@ const Home = () => {
     const [timer,setTimer] = useState(2)
     const id = useRef(null)
     const containerRef = useRef(null)
-    const [scroll, setScroll] = useState();
-    useLocoScroll(!preloader)
-  
+    const [scroll, setScroll] = useState(500);
+    // useLocoScroll(!preloader)
+
+    
   
     const clear = () => {
       window.clearInterval(id.current);
@@ -49,8 +52,9 @@ const Home = () => {
       }
     },[timer])
 
- 
+    const [openMenu, setOpenMenu] = useState(false)
 
+   
     
 
   return (
@@ -58,25 +62,33 @@ const Home = () => {
       preloader ? (  
         <Loading/>
       ) : (
-        <div className='scroll-container' ref={containerRef} data-scroll-container id="main-container">
+        <div className='w-full h-full'>
+          {/* <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
+          <NavLinks openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <div className='outer-wrapper scroll-container' ref={containerRef} data-scroll-container id="main-container">
+          <div className='wrapper'>
           <MobileNav />
-        <HeroSection />
         
-        <Projects />
+        <HeroSection openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        
+        <Projects scroll={scroll} openMenu={openMenu} setOpenMenu={setOpenMenu}/>
         {/* <Project /> */}
-        <SnoozeOff />
-        <Bstop />
-        <CodeCampus />
-        <Rebank />
-        <Easy/>
-        <GreenAfrica/>
-        <Drooves />
-        <Randoms />
-        <NikeAir />
-        <FeetWings />
-        <Portfoilio />
-        <Contact />
+        {/* <ProjectsLoading /> */}
+        <SnoozeOff openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        {/* <CodeCampus /> */}
+        <Rebank openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Easy openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <GreenAfrica openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Drooves openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <FeetWings openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Portfoilio openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+        <Contact openMenu={openMenu} setOpenMenu={setOpenMenu}/>
         {/* <Project /> */}
+        </div>
+          </div>
           </div>
 )
     }
