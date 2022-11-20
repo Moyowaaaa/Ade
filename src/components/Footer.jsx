@@ -8,26 +8,9 @@ import { gsap } from 'gsap'
 
 
 const Footer = () => {
-    // const tl = gsap.timeline()
+  
   let socialLinks = useRef(null)
 
-  // console.log(socialLinks.current?.children[0])
-
-  // useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     tl.from('.socials', {
-  //       y:200,
-  //       duration:0.5,
-  //       opacity:0,
-  //     })
-  //     tl.from(['.linkedin','.twitter','.behance'], {
-  //       // stagger:1.2,
-  //       ease:"power3.inOut",
-  //       opacity: 1, y:"100%", duration:.2, stagger:.4
-  //     })
-  //   })
-  //   
-  // })
   
 
 

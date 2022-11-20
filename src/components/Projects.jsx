@@ -67,18 +67,7 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
  });
 }
 
-// useEffect(() => {
-//   id.current = window.setInterval(() => {
-//     setTimer((timer) => timer -1)
-//   }, 1500)
-// },[])
 
-
-// useEffect(() => {
-//   if (timer === 0){
-//     scrollToProject()
-//   }
-// },[timer])
 
 
  

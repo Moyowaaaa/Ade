@@ -4,6 +4,7 @@ const useIntersectionObserver = (ref, threshold) => {
     const [isIntersecting, setIntersecting] = useState(false);
 
     useEffect(() => {
+        setIntersecting(false)
       const intersectionObserver = new IntersectionObserver(
         ([entry]) => {
 

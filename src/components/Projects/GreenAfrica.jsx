@@ -15,23 +15,6 @@ const GreenAfrica = ({openMenu, setOpenMenu}) => {
   const TextRef = useRef(null)
   const ImageRef = useRef(null)
 
-  // useEffect(() => {
-  //   if (onScreen) setReveal(onScreen)
-  // }, [onScreen])
-
-  // useEffect(() => {
-  //   if(onScreen && reveal) {
-  //     const tl = gsap.timeline()
-
-  //     tl.fromTo(TextRef.current, { opacity:0 },
-  //     { y: 0, duration:0.5, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" })
-  //     .from(ImageRef.current, { duration:0.5, ease:"power3.inOut", scale:2.5, opacity:0}, "<0.1");
-
-      
-  //   }
-  // }, [onScreen])
-
-
   return (
     <div className="section flex py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
