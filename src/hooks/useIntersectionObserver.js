@@ -8,7 +8,12 @@ const useIntersectionObserver = (ref, threshold) => {
       const intersectionObserver = new IntersectionObserver(
         ([entry]) => {
 
-          setIntersecting(entry?.isIntersecting ?? false);
+          
+                setIntersecting(entry.isIntersecting ?? false);
+      
+             
+      
+         
         },
             {
                 rootMargin: "0px",

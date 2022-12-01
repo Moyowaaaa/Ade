@@ -11,21 +11,24 @@ const Randoms = ({openMenu,setOpenMenu}) => {
   const ref = useRef(null)
   const onScreen = useIntersectionObserver(ref,0.1)
 
+
+
   useEffect(() => {
-    if (onScreen) setTimeout(() =>  scrollToProject(),1700 )
+    const scrollToProject = setTimeout(() => {
+      if(onScreen) {
+        document.querySelector('#nikeAir').scrollIntoView({
+          behavior: 'smooth'
+     });
+      }
+    }, 1500)
+  
+    return () => clearTimeout(scrollToProject)
+  
+  },[onScreen])
 
-    if(!onScreen) clearTimeout(scrollToProject)
-    
-  }, [onScreen])
-
-  const scrollToProject = () => {
-    document.querySelector('#nikeAir').scrollIntoView({
-      behavior: 'smooth'
- });
-}
 
 
-  console.log('randoms is ', onScreen)
+
 
   return (
     <div className='section main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' data-scroll-section id="randoms">

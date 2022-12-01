@@ -30,16 +30,15 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
 
 
   useEffect(() => {
-    if (onScreen) {setReveal(onScreen)
-
-      setTimeout(() =>  scrollToProject(),1700 )
-     
-    }
-
-    if(!onScreen) clearTimeout(scrollToProject)
-
+    if (onScreen) setReveal(onScreen)
     
+   
   }, [onScreen])
+
+
+
+  // setTimeout(() =>  scrollToProject(),1700 )
+  // if(!onScreen) clearTimeout(scrollToProject)
 
 
 
@@ -61,11 +60,20 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
 
 
 
-  const scrollToProject = () => {
-    document.querySelector('#snoozeOff').scrollIntoView({
-      behavior: 'smooth'
- });
-}
+
+
+useEffect(() => {
+  const scrollToProject = setTimeout(() => {
+    if(onScreen) {
+      document.querySelector('#snoozeOff').scrollIntoView({
+        behavior: 'smooth'
+   });
+    }
+  }, 1500)
+
+  return () => clearTimeout(scrollToProject)
+
+},[onScreen])
 
 
 
