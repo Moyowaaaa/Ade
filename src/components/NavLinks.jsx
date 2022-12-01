@@ -9,6 +9,12 @@ const NavLinks = ({setOpenMenu, openMenu}) => {
         setOpenMenu(false)
       }
 
+      const scrollToHome = () => {
+          document.querySelector('#home').scrollIntoView({
+            behavior: 'smooth'
+       });
+      }
+
           const scrollToProject = () => {
         document.querySelector('#projects').scrollIntoView({
           behavior: 'smooth'
@@ -34,25 +40,25 @@ const NavLinks = ({setOpenMenu, openMenu}) => {
 
     <h1 className='text-lg link'>SA</h1>
     
-    <div className='flex gap-4 '>
+    <div className='flex gap-4 cursor-pointer'>
     
-      <a href='#home'   onClick={() => {setOpenMenu(false)}}>
+      <a onClick={scrollToHome}>
       <p className='link'>Home</p>
     
       </a>
     
     
-    <a href='#projects'  onClick={() => {setOpenMenu(false)}}>
+    <a onClick={scrollToProject}>
     
     <p className='link'>Projects</p>
     </a>
     
-    <a href='#randoms'  onClick={() => {setOpenMenu(false)}}>
+    <a onClick={scrollToRandoms}>
     <p className='link'>Randoms</p>
     
     </a>
     
-    <a href='#contact'  onClick={() => {setOpenMenu(false)}}>
+    <a   onClick={scrollToContact}>
     <p  className='link'>Contact</p>
     </a>
     

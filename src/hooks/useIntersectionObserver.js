@@ -4,10 +4,16 @@ const useIntersectionObserver = (ref, threshold) => {
     const [isIntersecting, setIntersecting] = useState(false);
 
     useEffect(() => {
+        setIntersecting(false)
       const intersectionObserver = new IntersectionObserver(
         ([entry]) => {
 
-          setIntersecting(entry?.isIntersecting ?? false);
+          
+                setIntersecting(entry.isIntersecting ?? false);
+      
+             
+      
+         
         },
             {
                 rootMargin: "0px",

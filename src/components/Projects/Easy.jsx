@@ -15,23 +15,7 @@ const Easy = ({openMenu, setOpenMenu}) => {
   const TextRef = useRef(null)
   const ImageRef = useRef(null)
 
-  // useEffect(() => {
-  //   if (onScreen) setReveal(onScreen)
-  // }, [onScreen])
 
-  // useEffect(() => {
-  //   if(onScreen && reveal) {
-  //     const tl = gsap.timeline()
-  //   const ctx = gsap.context(() => {
-  //     tl.fromTo(TextRef.current, { opacity:0 },
-  //     { y: 0, duration:0.5, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" })
-  //     .from(ImageRef.current, { duration:0.5, ease:"power3.inOut", scale:2.5, opacity:0}, "<0.1");
-
-  //    })
-  //     return () => ctx.revert();
-      
-  //   }
-  // }, [onScreen])
 
 
 

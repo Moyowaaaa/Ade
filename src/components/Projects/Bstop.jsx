@@ -14,25 +14,6 @@ const Bstop = ({openMenu, setOpenMenu}) => {
   const ImageRef = useRef(null)
 
 
-  // useEffect(() => {
-  //   if (onScreen) setReveal(onScreen)
-  // }, [onScreen])
-
-  // useEffect(() => {
-  //   if(onScreen && reveal) {
-  //     const tl = gsap.timeline()
-  //   const ctx = gsap.context(() => {
-  //     tl.fromTo(TextRef.current, { opacity:0 },
-  //     { y: 0, duration:0.5, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" })
-  //     .from(ImageRef.current, { duration:0.5, ease:"power3.inOut", scale:2.5, opacity:0}, "<0.1");
-
-  //    })
-  //     return () => ctx.revert();
-      
-  //   }
-  // }, [onScreen])
-
-
   return (
     <div className="section flex   h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
