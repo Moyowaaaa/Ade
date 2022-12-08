@@ -10,6 +10,9 @@ gsap.registerPlugin(ScrollTrigger)
 const Randoms = ({openMenu,setOpenMenu}) => {
   const ref = useRef(null)
   const onScreen = useIntersectionObserver(ref,0.1)
+  const [reveal, setReveal] = useState(false);
+  const RandomsRef = useRef(null)
+
 
 
 
@@ -26,6 +29,28 @@ const Randoms = ({openMenu,setOpenMenu}) => {
   
   },[onScreen])
 
+  useEffect(() => {
+    if (onScreen) setReveal(onScreen)
+    
+   
+  }, [onScreen])
+
+  
+  useEffect(() => {
+    if(onScreen && reveal) {
+      const tl = gsap.timeline()
+    const ctx = gsap.context(() => {
+      tl.fromTo(RandomsRef.current, { opacity:0 },
+      { y: 0, duration:1.9, opacity: 1, clipPath: "polygon(0 100%, 100% 100%, 100% 0, 0 0)" })
+      
+
+     })
+      return () => ctx.revert();
+      
+    }
+  }, [onScreen])
+
+
 
 
 
@@ -35,7 +60,7 @@ const Randoms = ({openMenu,setOpenMenu}) => {
   <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
     <div className='h-full w-full  flex flex-col justify-center 'ref={ref}>
     <div className='hero flex flex-col gap-4 lg:ml-16'>
-    <h1 className='text-6xl font-bold font-[avenir-black] underline lg:no-underline'>Randoms</h1>
+    <h1 className='text-6xl font-bold font-[avenir-black] underline lg:no-underline' ref={RandomsRef}>Randoms</h1>
 
         </div>
 
