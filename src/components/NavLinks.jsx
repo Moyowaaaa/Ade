@@ -36,11 +36,14 @@ const NavLinks = ({setOpenMenu, openMenu}) => {
 }
 
   return (
-    <div className={`border-2 py-6 px-10 w-full absolute top-0 right-0 left-0 ease-in-out duration-700 bg-[#E5E5E5] text-[#222222] z-50 flex justify-between font-[avenir-black] font-bold ${openMenu ? " translate-y-0" : " translate-y-[-150%]"}`}>
+    <div className={`border-2 py-6 px-10 w-full absolute top-0 right-0 left-0 ease-in-out duration-700 bg-[#E5E5E5] text-[#222222] z-50 flex justify-between font-[avenir-black] font-bold cursor-pointer ${openMenu ? " translate-y-0" : " translate-y-[-150%]"}`}>
 
-    <h1 className='text-lg link'>SA</h1>
+      
+<a onClick={scrollToHome}>
+    <h1 className='text-lg link '>SA</h1>
+    </a>
     
-    <div className='flex gap-4 cursor-pointer'>
+    <div className='flex gap-4 '>
     
       <a onClick={scrollToHome}>
       <p className='link'>Home</p>

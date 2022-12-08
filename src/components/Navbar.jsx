@@ -30,6 +30,13 @@ const Navbar = ({openMenu,setOpenMenu}) => {
         return () => ctx.revert();
       }, [])
 
+
+      const scrollToHome = () => {
+        document.querySelector('#home').scrollIntoView({
+          behavior: 'smooth'
+     });
+    }
+
   
 
       
@@ -37,15 +44,15 @@ const Navbar = ({openMenu,setOpenMenu}) => {
 
   return (
     <div className='hidden lg:flex w-full ' ref={ref}>
-    <div className='flex w-full   justify-between font-[avenir-medium] '>
+    <div className='flex w-full   justify-between font-[avenir-medium]  '>
 
-    <a href='#home' data-scroll-to>
-    <h1 className='text-lg '>SA</h1>
+    <a onClick={scrollToHome}>
+    <h1 className='text-lg cursor-pointer'>SA</h1>
     </a>
 
 
 
-<button className="top-6 right-6  z-50 text-4xl" onClick={() => {setOpenMenu(false), setOpenMenu(!openMenu)}} ref={kebabRef}>
+<button className="top-6 right-6 cursor-pointer z-50 text-4xl" onClick={() => {setOpenMenu(false), setOpenMenu(!openMenu)}} ref={kebabRef}>
 <img src={kebab} /></button>
 
 
