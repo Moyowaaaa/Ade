@@ -7,7 +7,17 @@ const Loading = () => {
 
     const tl = gsap.timeline()
 
+ 
     const handleAnimation = () => {
+
+      tl.from('.loader', {
+        opacity:0,
+        delay:0.3,
+        duration:0.2,
+        ease:"power3.inOut"
+      })
+
+      
       tl.from('.S', {
         duration:0.5, opacity: 0, y: -300, ease: "power3.inOut"
       }, "<.1")
