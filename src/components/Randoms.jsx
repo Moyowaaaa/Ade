@@ -2,9 +2,9 @@ import React,{useRef, useState, useEffect} from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
-gsap.registerPlugin(ScrollTrigger)
+
 
 
 const Randoms = ({openMenu,setOpenMenu}) => {

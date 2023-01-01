@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
+
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
 
 
