@@ -21,6 +21,13 @@ const HeroSection = ({openMenu,setOpenMenu}) => {
       return () => ctx.revert();
     }, [])
 
+    const scrollToProject = () => {
+      document.querySelector('#projects').scrollIntoView({
+        behavior: 'smooth'
+   });
+
+  }
+
 
   return (
  <div className='section flex min-h-screen h-screen flex-col lg:px-10 py-4  w-[100vw]' id="home" data-scroll-section>
@@ -36,7 +43,7 @@ design background and keen sense for learning. Hope to work with your<br/>
 on your next project.</p>
 
 
-<a href='#projects' data-scroll-to>
+<a onClick={scrollToProject}>
 <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8'>
             Projects
 
