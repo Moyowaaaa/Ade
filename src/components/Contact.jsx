@@ -23,7 +23,7 @@ const Contact = ({openMenu,setOpenMenu}) => {
 
   useEffect(() => {
     if (onScreen) setReveal(onScreen)
-    // console.log('contact page is on scren',onScreen)
+
   }, [onScreen])
 
   useEffect(() => {
@@ -43,27 +43,7 @@ const Contact = ({openMenu,setOpenMenu}) => {
   },[onScreen])
 
 
-  // useEffect(() => {
-
-  //   let tl = gsap.timeline({
-  //     scrollTrigger: contactPageRef.current,
-  //     markers:true,
-  //     start: "top center",
-  //     end:"-=500px",
-  //     scrub:true
-
-  //   })
-  //   tl.to(".box", {
-  //     x:500
-  //   }, "<.1")
-  //   .fromTo(['.box2 '],{
-  //     opacity:0,
-  //     duration:4
-  //   }, { y: 0,
-  //       opacity: 1,
-  //       clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)',
-  //       duration:3})
-  // })
+ 
 
   return (
     <div className='section flex min-h-screen h-screen flex-col  lg:px-10 py-4  w-[100vw]' id="contact" data-scroll-section ref={contactPageRef}>

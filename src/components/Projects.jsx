@@ -36,10 +36,6 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
 
 
 
-  // setTimeout(() =>  scrollToProject(),1700 )
-  // if(!onScreen) clearTimeout(scrollToProject)
-
-
 
 
   useEffect(() => {
