@@ -7,6 +7,7 @@ import twitter from '../images/twitter.svg'
 import behance from '../images/behance.svg'
 import mail from '../images/mail.svg'
 import { gsap } from 'gsap'
+import smile from '../images/smile.svg'
 import useIntersectionObserver from '../hooks/useIntersectionObserver'
 
 
@@ -74,13 +75,10 @@ const Contact = ({openMenu,setOpenMenu}) => {
       LIKE WHAT YOU SEE?
       </h1>
 
-      <div className='flex gap-4 items-center'>
+      <div className='flex gap-2 items-center'>
         
         <p>Get in touch and let’s create magic!</p>
-        {/* <div className="flex flex-col items-center text-lg border-2 border-[teal] px-2 justify-between">
-          <p className='rotate-90'> : </p>
-          <p className='rotate-90 '> ) </p>
-        </div> */}
+        <img src={smile} alt="smile" className='-rotate-90'/>
         </div>
 
 
