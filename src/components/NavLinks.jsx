@@ -39,31 +39,31 @@ const NavLinks = ({setOpenMenu, openMenu}) => {
     <div className={`border-2 py-6 px-10 w-full absolute top-0 right-0 left-0 ease-in-out duration-700 bg-[#E5E5E5] text-[#222222] z-50 flex justify-between font-[avenir-black] font-bold cursor-pointer ${openMenu ? " translate-y-0" : " translate-y-[-150%]"}`}>
 
       
-<a onClick={scrollToHome}>
+<div onClick={scrollToHome}>
     <h1 className='text-lg link '>SA</h1>
-    </a>
+    </div>
     
     <div className='flex gap-4 '>
     
-      <a onClick={scrollToHome}>
+      <div onClick={scrollToHome}>
       <p className='link'>Home</p>
     
-      </a>
+      </div>
     
     
-    <a onClick={scrollToProject}>
+    <div onClick={scrollToProject}>
     
     <p className='link'>Projects</p>
-    </a>
+    </div>
     
-    <a onClick={scrollToRandoms}>
+    <div onClick={scrollToRandoms}>
     <p className='link'>Randoms</p>
     
-    </a>
+    </div>
     
-    <a   onClick={scrollToContact}>
+    <div   onClick={scrollToContact}>
     <p  className='link'>Contact</p>
-    </a>
+    </div>
     
     </div>
     
