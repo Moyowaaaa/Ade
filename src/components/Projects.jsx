@@ -60,7 +60,7 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
 useEffect(() => {
   const scrollToProject = setTimeout(() => {
     if(onScreen) {
-      document.querySelector('#snoozeOff').scrollIntoView({
+      document.querySelector('#finance').scrollIntoView({
         behavior: 'smooth'
    });
     }

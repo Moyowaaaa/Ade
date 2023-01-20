@@ -18,6 +18,10 @@ import Contact from "../components/Contact";
 import MobileNav from "../components/MobileNav";
 import Rebank from "../components/Projects/Rebank";
 import NavLinks from "../components/NavLinks";
+import Finance from "../components/Projects/Finance";
+import Agbado from "../components/Projects/Agbado";
+import Gnoto from "../components/Projects/Gnoto";
+import Alat from "../components/Projects/Alat";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
@@ -70,12 +74,16 @@ const Home = () => {
                 openMenu={openMenu}
                 setOpenMenu={setOpenMenu}
               />
-              <SnoozeOff openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              {/* <SnoozeOff openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Rebank openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              {/* <Rebank openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Easy openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <GreenAfrica openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <Agbado openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              {/* <GreenAfrica openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Drooves openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <Gnoto openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <FeetWings openMenu={openMenu} setOpenMenu={setOpenMenu} />
