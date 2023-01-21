@@ -30,7 +30,7 @@ const HeroSection = ({openMenu,setOpenMenu}) => {
 
 
   return (
- <div className='section flex min-h-screen h-screen flex-col lg:px-10 py-4  w-[100vw]' id="home" data-scroll-section>
+ <div className='section flex min-h-screen h-screen flex-col lg:px-10 py-4  w-[100vw] ' id="home" data-scroll-section>
   <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
 

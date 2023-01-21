@@ -56,7 +56,7 @@ const Randoms = ({openMenu,setOpenMenu}) => {
 
 
   return (
-    <div className='section main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw]' data-scroll-section id="randoms">
+    <div className='section main flex lg:min-h-screen h-[15rem]  px-6lg:h-screen flex-col  py-2 px-6 lg:px-10 py-6 w-[100vw] ' data-scroll-section id="randoms">
   <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
     <div className='h-full w-full  flex flex-col justify-center 'ref={ref}>
     <div className='hero flex flex-col gap-4 lg:ml-16'>

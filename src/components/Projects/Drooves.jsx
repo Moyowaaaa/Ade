@@ -21,7 +21,7 @@ const Drooves = ({openMenu, setOpenMenu}) => {
 
 
   return (
-    <div className="section py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
+    <div className="section py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw] " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
 
 <div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">

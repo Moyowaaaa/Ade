@@ -44,53 +44,52 @@ const Finance = ({openMenu, setOpenMenu}) => {
     
 
   return (
-     <>
+    <>
 
-      <div className="section flex min-h-screen h-screen flex-col z-50  w-[100vw] " data-scroll-section ref={pageRef} id="finance">
-       
-      <div className="flex w-full  h-full flex-col-reverse lg:flex-row">
+    <div className="section flex min-h-screen h-screen flex-col z-50  w-[100vw] " data-scroll-section ref={pageRef} id="finance">
+     
+    <div className="flex w-full  h-full flex-col-reverse lg:flex-row">
 
-          <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
-              <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 items-center'>
-                <div className=' flex flex-col gap-4 py-4 lg:py-0' ref={TextRef} data-scroll
-          data-scroll-direction="horizontal"
-          >
-              <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Mobile App</h2>
-      <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black] w-[25rem]'>Financial App 
-UI Design</h1>
+        <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col pb-10 lg:pb-0">
+            <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
+            <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 '>
+              <div className=' flex flex-col gap-4 py-4 lg:py-0' ref={TextRef} data-scroll
+        data-scroll-direction="horizontal"
+        >
+            <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Mobile App</h2>
+    <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>SnoozeOff</h1>
 
-      <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-11/12 '>A UI Concept of a financial application.</p>
+    <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-11/12 '>Mobile alarm app, designed with simplicity and ease of use in mind.<br/>Almost all needed functions of the app are in one screen.</p>
 
-      <p className='lg:hidden font-[avenir-light] w-full text-justify text-base '>A UI Concept of a financial application.</p>
+    <p className='lg:hidden font-[avenir-light] w-full text-justify text-base '>Mobile alarm app, designed with simplicity and ease of use in mind.Almost all needed functions of the app are in one screen.</p>
 
-      <a href='https://www.behance.net/gallery/158638431/Bank-App-Mobile-UI-Concept' target="_blank" rel="noreferrer" >
-      <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
-         View Project
-
-
-          <img src={rightArrow} alt="right arrow"/>
-
-       </button>
-       </a>
-          </div>
-          </div>
+    <a href='https://www.behance.net/gallery/140830051/Alarm-App' target="_blank" rel="noreferrer" >
+    <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
+       View Project
 
 
-              <Footer />
-          </div>
+        <img src={rightArrow} alt="right arrow"/>
+
+     </button>
+     </a>
+        </div>
+        </div>
 
 
-          <div className="flex flex-col  w-full  lg:w-6/12 lg:items-center lg:justify-center bg-[#2A2929] " ref={ImageRef}>
-              <img src={finance} className="lg:h-5/6 lg:w-full"/>
+            <Footer />
+        </div>
 
 
-              </div>
+        <div className="flex flex-col w-full justify-center h-screen bg-[#2A2929] lg:w-6/12  " ref={ImageRef}>
+            <img src={finance} />
 
-      </div>
-  </div>
-  
-    </>
+
+            </div>
+
+    </div>
+</div>
+
+  </>
    
   )
 }

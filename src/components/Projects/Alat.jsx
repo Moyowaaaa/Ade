@@ -48,7 +48,7 @@ const Alat = ({openMenu, setOpenMenu}) => {
        
       <div className="flex w-full  h-full flex-col-reverse lg:flex-row">
 
-          <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
+          <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col ">
               <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <div className='hero flex flex-col   h-full w-full justify-center lg:items-center w-full px-2 lg:px-0 '>
                 <div className=' flex flex-col gap-4 py-4 lg:py-0' ref={TextRef} data-scroll

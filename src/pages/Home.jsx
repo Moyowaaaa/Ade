@@ -57,7 +57,7 @@ const Home = () => {
       {preloader ? (
         <Loading />
       ) : (
-        <div className="w-full h-full">
+        <div className="w-full h-full overflow-x-hidden">
           <NavLinks openMenu={openMenu} setOpenMenu={setOpenMenu} />
           <div
             className="outer-wrapper scroll-container"
@@ -76,7 +76,7 @@ const Home = () => {
                 setOpenMenu={setOpenMenu}
               />
               <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              {/* <SnoozeOff openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
+              <SnoozeOff openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
               {/* <Rebank openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}

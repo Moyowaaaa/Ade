@@ -17,7 +17,7 @@ const Gnoto = ({openMenu, setOpenMenu}) => {
     <div className="section py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
 
-<div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">
+<div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 pb-10 lg:pb-0">
             <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
             <div className='hero flex flex-col gap-4 lg:ml-16 h-full w-full justify-center lg:items-center px-2 lg:px-0 ' ref={TextRef}>
               <div className='flex flex-col w-max gap-5'>
