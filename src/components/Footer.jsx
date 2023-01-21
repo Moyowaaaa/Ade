@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <div className='hidden fixed pb-6 bottom-0 lg:flex  w-full flex-col gap-2 font-[avenir-medium]'>
-        <h2>Follow me:</h2>
+        <h2 className='text-sm'>Follow me:</h2>
         <div className='socials flex gap-2' ref={socialLinks}> 
         <a href='https://www.linkedin.com/in/adeoluwa-siyanbade-539b84170/' target="_blank" rel="noreferrer" >
         <img src={linkedin} className="linkedin" alt="linkedin"/>

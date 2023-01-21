@@ -2,7 +2,7 @@ import React, { useRef, useState,useEffect } from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
-import alat from '../../images/alat.png'
+import alat from '../../images/alatt.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
 
@@ -50,19 +50,19 @@ const Alat = ({openMenu, setOpenMenu}) => {
 
           <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
               <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 '>
+              <div className='hero flex flex-col   h-full w-full justify-center lg:items-center w-full px-2 lg:px-0 '>
                 <div className=' flex flex-col gap-4 py-4 lg:py-0' ref={TextRef} data-scroll
           data-scroll-direction="horizontal"
           >
               <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Mobile App</h2>
-      <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>Wema ALAT
+      <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black] '>Wema ALAT <br/>
 Mobile Redesign.</h1>
 
       <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-11/12 '>A UI Concept of a financial application.</p>
 
       <p className='lg:hidden font-[avenir-light] w-full text-justify text-base '>A redesign of the existing Wema ALAT mobile banking application.</p>
 
-      <a href='https://www.behance.net/gallery/140830051/Alarm-App' target="_blank" rel="noreferrer" >
+      <a href='https://www.behance.net/gallery/161415625/WEMA-ALAT-MOBILE-APP-UI-REDESIGN-CONCEPT' target="_blank" rel="noreferrer" >
       <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
          View Project
 
@@ -79,7 +79,7 @@ Mobile Redesign.</h1>
           </div>
 
 
-          <div className="flex flex-col w-full  lg:w-6/12  " ref={ImageRef}>
+          <div className="flex flex-col w-full  lg:w-6/12 bg-[#FFFFFF] lg:justify-center lg:items-center" ref={ImageRef}>
               <img src={alat} />
 
 

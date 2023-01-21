@@ -52,19 +52,19 @@ const Finance = ({openMenu, setOpenMenu}) => {
 
           <div className="flex flex-col-reverse w-full lg:w-6/12  lg:px-10 py-4 lg:flex-col">
               <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 '>
+              <div className='hero flex flex-col   h-full w-full justify-center w-full px-2 lg:px-0 items-center'>
                 <div className=' flex flex-col gap-4 py-4 lg:py-0' ref={TextRef} data-scroll
           data-scroll-direction="horizontal"
           >
               <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Mobile App</h2>
-      <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>Financial App 
+      <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black] w-[25rem]'>Financial App 
 UI Design</h1>
 
       <p className='hidden lg:flex font-[avenir-light] w-11/12 lg:w-11/12 '>A UI Concept of a financial application.</p>
 
       <p className='lg:hidden font-[avenir-light] w-full text-justify text-base '>A UI Concept of a financial application.</p>
 
-      <a href='https://www.behance.net/gallery/140830051/Alarm-App' target="_blank" rel="noreferrer" >
+      <a href='https://www.behance.net/gallery/158638431/Bank-App-Mobile-UI-Concept' target="_blank" rel="noreferrer" >
       <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
          View Project
 
@@ -81,8 +81,8 @@ UI Design</h1>
           </div>
 
 
-          <div className="flex flex-col w-full  lg:w-6/12  " ref={ImageRef}>
-              <img src={finance} />
+          <div className="flex flex-col  w-full  lg:w-6/12 lg:items-center lg:justify-center bg-[#2A2929] " ref={ImageRef}>
+              <img src={finance} className="lg:h-5/6 lg:w-full"/>
 
 
               </div>

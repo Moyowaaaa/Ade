@@ -2,7 +2,7 @@ import React, { useRef, useState,useEffect } from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
-import agbado from '../../images/agbado.png'
+import agbado from '../../images/agbadoo.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
 

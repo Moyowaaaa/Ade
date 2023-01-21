@@ -22,6 +22,7 @@ import Finance from "../components/Projects/Finance";
 import Agbado from "../components/Projects/Agbado";
 import Gnoto from "../components/Projects/Gnoto";
 import Alat from "../components/Projects/Alat";
+import NFT from "../components/Randoms/NFT";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
@@ -86,8 +87,9 @@ const Home = () => {
               <Gnoto openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <FeetWings openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Portfoilio openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <NFT openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              {/* <FeetWings openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <Portfoilio openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Contact openMenu={openMenu} setOpenMenu={setOpenMenu} />
             </div>
           </div>
