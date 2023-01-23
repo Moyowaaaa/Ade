@@ -76,7 +76,7 @@ const Home = () => {
                 setOpenMenu={setOpenMenu}
               />
               <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <SnoozeOff openMenu={openMenu} setOpenMenu={setOpenMenu} />
+         
               <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
               {/* <Rebank openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
