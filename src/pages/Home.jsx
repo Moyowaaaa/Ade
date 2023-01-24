@@ -79,17 +79,13 @@ const Home = () => {
          
               <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              {/* <Rebank openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Easy openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Agbado openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              {/* <GreenAfrica openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Drooves openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Gnoto openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu} />
               <NFT openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              {/* <FeetWings openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Portfoilio openMenu={openMenu} setOpenMenu={setOpenMenu} /> */}
               <Contact openMenu={openMenu} setOpenMenu={setOpenMenu} />
             </div>
           </div>
