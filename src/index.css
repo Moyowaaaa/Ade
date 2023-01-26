@@ -6,24 +6,29 @@
     font-family: 'avenir-black';
     src: local('avenir-black'),
     url('./assets/fonts/Avenir-Black.otf') format('opentype');
+    font-display: swap;
+  
 }
 
 @font-face{
     font-family: 'avenir-heavy';
     src: local('avenir-heavy'),
     url('./assets/fonts/Avenir-Heavy.otf') format('opentype');
+    font-display: swap;
 }
 
 @font-face{
     font-family: 'avenir-light';
     src: local('avenir-light'),
     url('./assets/fonts/Avenir-Light.otf') format('opentype');
+    font-display: swap;
 }
 
 @font-face{
     font-family: 'avenir-medium';
     src: local('avenir-medium'),
     url('./assets/fonts/Avenir-Medium.otf') format('opentype');
+    font-display: swap;
 }
 
 @media screen and (min-width:1000px) {
