@@ -23,14 +23,16 @@ import Agbado from "../components/Projects/Agbado";
 import Gnoto from "../components/Projects/Gnoto";
 import Alat from "../components/Projects/Alat";
 import NFT from "../components/Randoms/NFT";
+import avenirBold from "../assets/fonts/Avenir-Black.otf";
+import avenirBlack from "../assets/fonts/Avenir-Heavy.otf";
+import avenirLight from "../assets/fonts/Avenir-Light.otf";
+import avenirMedium from "../assets/fonts/Avenir-Medium.otf";
 
 const Home = () => {
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = useState(2);
   const id = useRef(null);
   const containerRef = useRef(null);
-  const [scroll, setScroll] = useState(500);
- 
 
   const clear = () => {
     window.clearInterval(id.current);
@@ -50,48 +52,72 @@ const Home = () => {
   }, [timer]);
 
   const [openMenu, setOpenMenu] = useState(false);
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  useEffect(() => {
+    const fontPromises = [
+      new Promise((resolve, reject) => {
+        const font = new FontFace("avenirBold", `url(${avenirBold})`);
+        font.load().then(resolve, reject);
+      }),
+      new Promise((resolve, reject) => {
+        const font2 = new FontFace("avenirBlack", `url(${avenirBlack})`);
+        font2.load().then(resolve, reject);
+      }),
+      new Promise((resolve, reject) => {
+        const font3 = new FontFace("avenirLight", `url(${avenirLight})`);
+        font3.load().then(resolve, reject);
+      }),
+      new Promise((resolve, reject) => {
+        const font4 = new FontFace("avenirMedium", `url(${avenirMedium})`);
+        font4.load().then(resolve, reject);
+      }),
+    ];
+    Promise.all(fontPromises).then(() => {
+      setFontsLoaded(true);
+    });
+  }, []);
 
   return (
-    <>
-      {" "}
-      {preloader ? (
-        <Loading />
-      ) : (
-        <div className="w-full h-full overflow-x-hidden">
-          <NavLinks openMenu={openMenu} setOpenMenu={setOpenMenu} />
-          <div
-            className="outer-wrapper scroll-container"
-            ref={containerRef}
-            data-scroll-container
-            id="main-container"
-          >
-            <div className="wrapper">
-              <MobileNav />
+    <div>
+      {fontsLoaded && (
+        <>
+          {preloader ? (
+            <Loading />
+          ) : (
+            <div className="w-full h-full overflow-x-hidden">
+              <NavLinks openMenu={openMenu} setOpenMenu={setOpenMenu} />
+              <div
+                className="outer-wrapper scroll-container"
+                ref={containerRef}
+                data-scroll-container
+                id="main-container"
+              >
+                <div className="wrapper">
+                  <MobileNav />
 
-              <HeroSection openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <HeroSection openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
-              <Projects
-                scroll={scroll}
-                openMenu={openMenu}
-                setOpenMenu={setOpenMenu}
-              />
-              <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
-         
-              <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Easy openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Agbado openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Drooves openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Gnoto openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <NFT openMenu={openMenu} setOpenMenu={setOpenMenu} />
-              <Contact openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Projects openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
+
+                  <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Easy openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Agbado openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Drooves openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Gnoto openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Randoms openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <NikeAir openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <NFT openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <Contact openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          )}
+        </>
       )}
-    </>
+    </div>
   );
 };
 
