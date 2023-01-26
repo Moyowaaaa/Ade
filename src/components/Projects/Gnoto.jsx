@@ -49,7 +49,7 @@ Pages</h1>
 
 
         <div className="flex flex-col w-full  lg:w-6/12 " ref={ImageRef}>
-            <img src={gnoto} />
+            <img src={gnoto} alt="gnoto"/>
 
 
             </div>

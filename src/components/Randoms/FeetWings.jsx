@@ -13,7 +13,7 @@ const FeetWings = ({openMenu,setOpenMenu}) => {
 
         </div>
         <div className='  w-full h-4/5 flex flex-col items-center justify-center bg-[#0F4C82] py-2 object-contain'>
-            <img src={feetWings} className='relative object-contain w-11/12 lg:w-6/12'/>
+            <img src={feetWings} alt="feet wings" className='relative object-contain w-11/12 lg:w-6/12'/>
         </div>
 
      

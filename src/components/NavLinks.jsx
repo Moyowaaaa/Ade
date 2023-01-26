@@ -67,7 +67,7 @@ const NavLinks = ({setOpenMenu, openMenu}) => {
     
     </div>
     
-    <button className=' z-50 text-lg' onClick={closeMenu}><img src={close}/></button>
+    <button className=' z-50 text-lg' onClick={closeMenu}><img src={close} alt="close"/></button>
     
     
     

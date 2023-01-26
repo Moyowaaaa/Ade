@@ -45,7 +45,7 @@ const Bstop = ({openMenu, setOpenMenu}) => {
 
 
         <div className="flex flex-col w-full lg:w-6/12 " ref={ImageRef}>
-            <img src={bstop} />
+            <img src={bstop} alt="bstop"/>
 
 
             </div>

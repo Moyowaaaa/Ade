@@ -53,7 +53,7 @@ const Navbar = ({openMenu,setOpenMenu}) => {
 
 
 <button className="top-6 right-6 cursor-pointer z-50 text-4xl" onClick={() => {setOpenMenu(false), setOpenMenu(!openMenu)}} ref={kebabRef}>
-<img src={kebab} /></button>
+<img src={kebab} alt="kebab" /></button>
 
 
 

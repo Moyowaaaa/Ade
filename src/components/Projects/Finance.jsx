@@ -82,7 +82,7 @@ UI Design</h1>
 
 
         <div className="flex flex-col w-full justify-center h-screen bg-[#2A2929] lg:w-6/12  " ref={ImageRef}>
-            <img src={finance} />
+            <img src={finance} alt="finance"/>
 
 
             </div>

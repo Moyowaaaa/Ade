@@ -47,7 +47,7 @@ and landing page showing indicating the application is still in beta</p>
 
 
         <div className="flex flex-col w-full  lg:w-6/12 " ref={ImageRef}>
-            <img src={agbado} />
+            <img src={agbado} alt="agbado"/>
 
 
             </div>

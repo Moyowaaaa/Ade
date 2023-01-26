@@ -47,7 +47,7 @@ const CodeCampus = ({openMenu, setOpenMenu}) => {
 
 
         <div className="flex flex-col w-full  lg:w-6/12 " ref={ImageRef}>
-            <img src={codeCampus} />
+            <img src={codeCampus} alt="code campus"/>
 
 
             </div>

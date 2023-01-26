@@ -12,7 +12,7 @@ const NikeAir = ({openMenu,setOpenMenu}) => {
 
         </div>
         <div className=' w-full h-4/5 flex flex-col items-center justify-center bg-[#617E1B] py-2 object-contain'>
-            <img src={Air} className='relative object-contain w-11/12 lg:w-6/12'/>
+            <img src={Air} className='relative object-contain w-11/12 lg:w-6/12' alt="AIR"/>
         </div>
       
      

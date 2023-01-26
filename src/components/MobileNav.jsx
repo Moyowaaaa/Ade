@@ -60,7 +60,7 @@ const MobileNav = () => {
 
 
 <button className="top-6 right-6 lg:hidden z-50 text-4xl" onClick={() => setOpenMenu(!openMenu)}>
-<img src={kebab} /></button>
+<img src={kebab} alt="kebab" /></button>
 
 
 

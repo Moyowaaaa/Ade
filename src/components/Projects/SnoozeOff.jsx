@@ -83,7 +83,7 @@ const SnoozeOff = ({openMenu, setOpenMenu}) => {
 
 
           <div className="flex flex-col w-full  lg:w-6/12  " ref={ImageRef}>
-              <img src={snoozeOff} />
+              <img src={snoozeOff} alt="snooze off"/>
 
 
               </div>

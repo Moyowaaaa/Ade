@@ -51,7 +51,7 @@ challenge.</p>
 
 
         <div className="flex flex-col w-full  lg:w-6/12 " ref={ImageRef}>
-            <img src={rebank} />
+            <img src={rebank} alt="rebank"/>
 
 
             </div>

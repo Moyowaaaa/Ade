@@ -47,7 +47,7 @@ const Drooves = ({openMenu, setOpenMenu}) => {
 
 
         <div className="flex flex-col  bg-black items-center justify-center w-full  lg:w-6/12 " ref={ImageRef}>
-            <img src={Droves} />
+            <img src={Droves} alt="drooves"/>
 
 
             </div>

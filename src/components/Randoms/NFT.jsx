@@ -11,7 +11,7 @@ const NFT = ({openMenu,setOpenMenu}) => {
 
     </div>
     <div className=' w-full  h-full lg:h-4/5 flex flex-col items-center justify-center bg-[#000000] py-2 object-contain lg:w-11/12 mx-auto'>
-        <img src={nft} className='relative object-contain w-full lg:w-11/12 lg:w-8/12'/>
+        <img src={nft} className='relative object-contain w-full lg:w-11/12 lg:w-8/12' alt="nft landing page"/>
     </div>
 
  

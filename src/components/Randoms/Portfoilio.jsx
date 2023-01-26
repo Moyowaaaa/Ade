@@ -12,7 +12,7 @@ const Portfoilio = ({openMenu,setOpenMenu}) => {
 
     </div>
     <div className=' w-full h-4/5 flex flex-col items-center justify-center bg-[#BDBDBD] py-2 object-contain'>
-        <img src={portfolio} className='relative object-contain w-11/12 lg:w-6/12'/>
+        <img src={portfolio} className='relative object-contain w-11/12 lg:w-6/12' alt='portfolio'/>
     </div>
 
  

@@ -80,7 +80,7 @@ Mobile Redesign.</h1>
 
 
           <div className="flex flex-col w-full  lg:w-6/12 bg-[#FFFFFF] lg:justify-center lg:items-center" ref={ImageRef}>
-              <img src={alat} />
+              <img src={alat} alt="alat"/>
 
 
               </div>
