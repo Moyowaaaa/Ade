@@ -31,7 +31,7 @@ and landing page showing indicating the application is still in beta.</p>
     Web app for tracking and making payment transactions. Dashboard  UI <br/>
 and landing page showing indicating the application is still in beta</p>
    
-   <a href='https://www.behance.net/gallery/138799399/Code-Campus' target="_blank" rel="noreferrer" >
+   <a href='https://www.behance.net/gallery/161789579/Dashboard-and-Landing-page-Design' target="_blank" rel="noreferrer" >
     <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 
