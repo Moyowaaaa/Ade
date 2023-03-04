@@ -4,10 +4,11 @@ import Navbar from './Navbar'
 import { gsap } from "gsap";
 
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { componentProps } from '../types';
 
 
 
-const Randoms = ({openMenu,setOpenMenu}) => {
+const Randoms = ({openMenu,setOpenMenu}:componentProps) => {
   const ref = useRef(null)
   const onScreen = useIntersectionObserver(ref,0.1)
   const [reveal, setReveal] = useState(false);
@@ -19,7 +20,7 @@ const Randoms = ({openMenu,setOpenMenu}) => {
   useEffect(() => {
     const scrollToProject = setTimeout(() => {
       if(onScreen) {
-        document.querySelector('#nikeAir').scrollIntoView({
+        document.querySelector('#nikeAir')?.scrollIntoView({
           behavior: 'smooth'
      });
       }

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Bstop from "../components/Projects/Bstop";
 import CodeCampus from "../components/Projects/CodeCampus";
-import Drooves from "../components/Projects//Drooves";
+import Drooves from "../components/Projects/Drooves";
 import Easy from "../components/Projects/Easy";
 import GreenAfrica from "../components/Projects/GreenAfrica";
 import HeroSection from "../components/HeroSection";
@@ -27,12 +27,13 @@ import avenirBold from "../assets/fonts/Avenir-Black.otf";
 import avenirBlack from "../assets/fonts/Avenir-Heavy.otf";
 import avenirLight from "../assets/fonts/Avenir-Light.otf";
 import avenirMedium from "../assets/fonts/Avenir-Medium.otf";
+import React from "react";
 
 const Home = () => {
-  const [preloader, setPreloader] = useState(true);
-  const [timer, setTimer] = useState(2);
-  const id = useRef(null);
-  const containerRef = useRef(null);
+  const [preloader, setPreloader] = useState<boolean>(true);
+  const [timer, setTimer] = useState<number>(2);
+  const id = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   const clear = () => {
     window.clearInterval(id.current);

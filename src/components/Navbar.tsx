@@ -4,12 +4,13 @@ import kebab from '../images/kebab.svg'
 import { gsap } from 'gsap'
 import close from '../images/close.svg'
 import useOnClickOutside from '../hooks/useOnClickOutside'
+import { componentProps } from '../types'
 
 
-const Navbar = ({openMenu,setOpenMenu}) => {
+const Navbar = ({openMenu,setOpenMenu}:componentProps) => {
     // const [openMenu,setOpenMenu] = useState(false)
-    const ref = useRef()
-    const kebabRef = useRef()
+    const ref = useRef<any>()
+    const kebabRef = useRef<any>()
 
     useOnClickOutside(ref, () => setOpenMenu(false))
 
@@ -32,7 +33,7 @@ const Navbar = ({openMenu,setOpenMenu}) => {
 
 
       const scrollToHome = () => {
-        document.querySelector('#home').scrollIntoView({
+        document.querySelector('#home')?.scrollIntoView({
           behavior: 'smooth'
      });
     }

@@ -6,14 +6,14 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger)
 
 
-export default function useLocoScroll(start) {
+export default function useLocoScroll(start:any) {
     useEffect(() => {
         if(!start) return
 
 
-        const scrollEl = document.querySelector("#main-container");
+        const scrollEl:any = document.querySelector("#main-container");
 
-        let locoScroll = new LocomotiveScroll({
+        let locoScroll:any = new LocomotiveScroll({
             el: scrollEl,
             smooth:true,
             multiplier:1,

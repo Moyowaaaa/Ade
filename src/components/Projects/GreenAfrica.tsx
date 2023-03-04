@@ -5,10 +5,11 @@ import rightArrow from '../../images/rightarrow.svg'
 import greenAfrica from '../../images/green.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
+import { componentProps } from '../../types'
 
 
 
-const GreenAfrica = ({openMenu, setOpenMenu}) => {
+const GreenAfrica = ({openMenu, setOpenMenu}:componentProps) => {
   const pageRef = useRef(null)
   const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(pageRef, 0.125)

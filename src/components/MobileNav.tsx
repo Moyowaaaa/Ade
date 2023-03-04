@@ -8,7 +8,7 @@ import useOnClickOutside from '../hooks/useOnClickOutside'
 const MobileNav = () => {
     const [openMenu,setOpenMenu] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
-    const ref = useRef()
+    const ref = useRef<any>()
     
 
     useOnClickOutside(ref, () => setOpenMenu(false))
