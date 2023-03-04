@@ -2,8 +2,9 @@ import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import nft from '../../images/nft.png'
+import { componentProps } from '../../types'
 
-const NFT = ({openMenu,setOpenMenu}) => {
+const NFT = ({openMenu,setOpenMenu}:componentProps) => {
   return (
     <div className='section main flex min-h-screen h-screen flex-col  w-[100vw]' data-scroll-section>
     <div className='px-10 py-6 '>

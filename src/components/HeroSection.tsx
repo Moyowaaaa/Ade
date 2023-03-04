@@ -4,9 +4,10 @@ import Footer from './Footer'
 import rightArrow from '../images/rightarrow.svg'
 
 import { gsap } from 'gsap'
+import { componentProps } from '../types'
 
 
-const HeroSection = ({openMenu,setOpenMenu}) => {
+const HeroSection = ({openMenu,setOpenMenu}:componentProps) => {
     const tl = gsap.timeline()
 
 
@@ -22,7 +23,7 @@ const HeroSection = ({openMenu,setOpenMenu}) => {
     }, [])
 
     const scrollToProject = () => {
-      document.querySelector('#projects').scrollIntoView({
+      document.querySelector('#projects')?.scrollIntoView({
         behavior: 'smooth'
    });
 

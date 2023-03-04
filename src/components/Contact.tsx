@@ -9,12 +9,13 @@ import mail from '../images/mail.svg'
 import { gsap } from 'gsap'
 import smile from '../images/smile.svg'
 import useIntersectionObserver from '../hooks/useIntersectionObserver'
+import { componentProps } from '../types'
 
 
 
 
-const Contact = ({openMenu,setOpenMenu}) => {
-  const contactPageRef = useRef()
+const Contact = ({openMenu,setOpenMenu}:componentProps) => {
+  const contactPageRef = useRef<any>()
   const socialRef = useRef(null)
   const box = useRef(null)
 

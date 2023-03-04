@@ -5,8 +5,9 @@ import rightArrow from '../../images/rightarrow.svg'
 import alat from '../../images/alatt.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
+import { componentProps } from '../../types'
 
-const Alat = ({openMenu, setOpenMenu}) => {
+const Alat = ({openMenu, setOpenMenu}:componentProps) => {
     const pageRef = useRef(null)
     const ref = useRef(null)
     const [reveal, setReveal] = useState(false);
@@ -15,7 +16,7 @@ const Alat = ({openMenu, setOpenMenu}) => {
     const ImageRef = useRef(null)
     const [timer,setTimer] = useState(2)
     const [loader, setLoader] = useState(true)
-    const id = useRef(null)
+    const id = useRef<any>(null)
   
     
     const clear = () => {

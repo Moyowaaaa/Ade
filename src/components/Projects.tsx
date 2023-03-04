@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { SetStateAction, useEffect, useRef, useState } from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { gsap } from "gsap";
 
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { componentProps } from '../types';
 
 
 
-const Projects = ({openMenu,setOpenMenu, scroll}) => {
-  const ref = useRef(null)
-  const [isVisible,setIsVisible] = useState(false)
+const Projects = ({openMenu,setOpenMenu}:componentProps) => {
+  const ref = useRef<HTMLDivElement | null>(null)
   const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(ref, 0.1)
   const ProjectRef= useRef(null)
@@ -22,9 +22,7 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
     
     
     
- 
 
-  let offset = (window.innerWidth / 100) * -6
 
 
 
@@ -60,7 +58,7 @@ const Projects = ({openMenu,setOpenMenu, scroll}) => {
 useEffect(() => {
   const scrollToProject = setTimeout(() => {
     if(onScreen) {
-      document.querySelector('#finance').scrollIntoView({
+      document.querySelector('#finance')?.scrollIntoView({
         behavior: 'smooth'
    });
     }

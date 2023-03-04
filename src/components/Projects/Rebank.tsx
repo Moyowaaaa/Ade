@@ -3,35 +3,40 @@ import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import codeCampus from '../../images/codecampus.png'
+import rebank from '../../images/rebank.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
+import { componentProps } from '../../types'
 
 
-const CodeCampus = ({openMenu, setOpenMenu}) => {
-  const pageRef = useRef(null)
-  const TextRef = useRef(null)
-  const ImageRef = useRef(null)
 
+const Rebank = ({openMenu, setOpenMenu}:componentProps) => {
 
+    const pageRef = useRef(null)
+    const [reveal, setReveal] = useState(false);
+    const onScreen = useIntersectionObserver(pageRef, 0.125)
+    const TextRef = useRef(null)
+    const ImageRef = useRef(null)
 
 
   return (
-    <div className="section py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
+      <div className="section py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>
     <div className="flex flex-col-reverse lg:flex-row w-full  h-full">
 
 <div className="flex flex-col w-full  lg:w-6/12  lg:px-10 py-4 ">
             <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
             <div className='hero flex flex-col gap-4 lg:ml-16 h-full w-full justify-center px-2 lg:px-0 ' ref={TextRef}>
             <h2 className='text-2xl lg:text-4xl underline lg:no-underline'>Website</h2>
-    <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>Code Campus</h1>
+    <h1 className='text-3xl lg:text-6xl font-bold font-[avenir-black]'>Rebank</h1>
     <p className='hidden lg:flex font-[avenir-light] w-10/12 lg:w-11/12'>
-    CodeCampus is an online platform for learning the latest technologies <br/> in the world. This is a landing page that give a potential candidate <br/> necessary information needed on available courses and pricing.</p>
-
+    Relume Design Challenge. Own design with assets from the design <br/>
+challenge. </p>
 
     <p className='lg:hidden font-[avenir-light] w-full text-justify'>
-    CodeCampus is an online platform for learning the latest technologies in the world. This is a landing page that give a potential candidate  necessary information needed on available courses and pricing.</p>
+    Relume Design Challenge. Own design with assets from the design 
+challenge.</p>
    
-   <a href='https://www.behance.net/gallery/138799399/Code-Campus' target="_blank" rel="noreferrer" >
+   <a href='https://www.behance.net/gallery/155887615/Rebank-Landing-Page-%28-Relume-Design-Challenge%29' target="_blank" rel="noreferrer" >
     <button className='bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8 font-[avenir-black] text-sm lg:text-base'>
        View Project
 
@@ -47,7 +52,7 @@ const CodeCampus = ({openMenu, setOpenMenu}) => {
 
 
         <div className="flex flex-col w-full  lg:w-6/12 " ref={ImageRef}>
-            <img src={codeCampus} alt="code campus"/>
+            <img src={rebank} alt="rebank"/>
 
 
             </div>
@@ -57,4 +62,4 @@ const CodeCampus = ({openMenu, setOpenMenu}) => {
   )
 }
 
-export default CodeCampus
+export default Rebank

@@ -5,9 +5,10 @@ import rightArrow from '../../images/rightarrow.svg'
 import finance from '../../images/finance.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
+import { componentProps } from '../../types'
 
 
-const Finance = ({openMenu, setOpenMenu}) => {
+const Finance = ({openMenu, setOpenMenu}:componentProps) => {
     const pageRef = useRef(null)
     const ref = useRef(null)
     const [reveal, setReveal] = useState(false);
@@ -16,7 +17,7 @@ const Finance = ({openMenu, setOpenMenu}) => {
     const ImageRef = useRef(null)
     const [timer,setTimer] = useState(2)
     const [loader, setLoader] = useState(true)
-    const id = useRef(null)
+    const id = useRef<any>(null)
   
     
     const clear = () => {

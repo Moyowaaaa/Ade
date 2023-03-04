@@ -2,9 +2,10 @@ import React from 'react'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import Air from '../../images/air.png'
+import { componentProps } from '../../types'
 
 
-const NikeAir = ({openMenu,setOpenMenu}) => {
+const NikeAir = ({openMenu,setOpenMenu}:componentProps) => {
   return (
     <div className='section  main flex min-h-screen h-screen flex-col  w-[100vw]' data-scroll-section id="nikeAir">
         <div className='px-10 py-6 '>

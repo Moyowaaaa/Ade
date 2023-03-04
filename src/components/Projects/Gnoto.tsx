@@ -5,9 +5,10 @@ import rightArrow from '../../images/rightarrow.svg'
 import gnoto from '../../images/gnoto.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from "gsap";
+import { componentProps } from '../../types'
 
 
-const Gnoto = ({openMenu, setOpenMenu}) => {
+const Gnoto = ({openMenu, setOpenMenu}:componentProps) => {
     const pageRef = useRef(null)
     const TextRef = useRef(null)
     const ImageRef = useRef(null)

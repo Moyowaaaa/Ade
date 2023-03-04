@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import close from '../images/close.svg'
-const NavLinks = ({setOpenMenu, openMenu}) => {
+import { componentProps } from '../types'
+const NavLinks = ({setOpenMenu, openMenu}:componentProps) => {
 
   
 
@@ -10,26 +11,26 @@ const NavLinks = ({setOpenMenu, openMenu}) => {
       }
 
       const scrollToHome = () => {
-          document.querySelector('#home').scrollIntoView({
+          document.querySelector('#home')?.scrollIntoView({
             behavior: 'smooth'
        });
       }
 
           const scrollToProject = () => {
-        document.querySelector('#projects').scrollIntoView({
+        document.querySelector('#projects')?.scrollIntoView({
           behavior: 'smooth'
      });
 
     }
 
      const scrollToRandoms = () => {
-      document.querySelector('#randoms').scrollIntoView({
+      document.querySelector('#randoms')?.scrollIntoView({
         behavior: 'smooth'
    });
   }
   
    const scrollToContact = () => {
-    document.querySelector('#contact').scrollIntoView({
+    document.querySelector('#contact')?.scrollIntoView({
       behavior: 'smooth'
  });
 

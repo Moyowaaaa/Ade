@@ -5,8 +5,9 @@ import rightArrow from '../../images/rightarrow.svg'
 import bstop from '../../images/bstop.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
 import { gsap } from 'gsap'
+import { componentProps } from '../../types'
 
-const Bstop = ({openMenu, setOpenMenu}) => {
+const Bstop = ({openMenu, setOpenMenu}:componentProps) => {
   const pageRef = useRef(null)
   const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(pageRef, 0.125)
