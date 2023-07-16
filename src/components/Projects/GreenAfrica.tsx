@@ -3,18 +3,14 @@ import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import greenAfrica from '../../images/green.png'
-import useIntersectionObserver from '../../hooks/useIntersectionObserver'
-import { gsap } from "gsap";
 import { componentProps } from '../../types'
 
 
 
 const GreenAfrica = ({openMenu, setOpenMenu}:componentProps) => {
-  const pageRef = useRef(null)
-  const [reveal, setReveal] = useState(false);
-  const onScreen = useIntersectionObserver(pageRef, 0.125)
-  const TextRef = useRef(null)
-  const ImageRef = useRef(null)
+  const pageRef =  useRef<HTMLDivElement | null>(null)
+  const TextRef =  useRef<HTMLDivElement | null>(null)
+  const ImageRef = useRef<HTMLDivElement | null>(null)
 
   return (
     <div className="section flex py-4 lg:py-0 flex  h-max lg:min-h-screen lg:h-screen flex-col  w-[100vw]  " data-scroll-section ref={pageRef}>

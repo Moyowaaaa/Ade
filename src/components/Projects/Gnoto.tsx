@@ -3,15 +3,13 @@ import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import gnoto from '../../images/gnoto.png'
-import useIntersectionObserver from '../../hooks/useIntersectionObserver'
-import { gsap } from "gsap";
 import { componentProps } from '../../types'
 
 
 const Gnoto = ({openMenu, setOpenMenu}:componentProps) => {
-    const pageRef = useRef(null)
-    const TextRef = useRef(null)
-    const ImageRef = useRef(null)
+    const pageRef =  useRef<HTMLDivElement | null>(null)
+    const TextRef =  useRef<HTMLDivElement | null>(null)
+    const ImageRef = useRef<HTMLDivElement | null>(null)
   
   
   return (

@@ -4,19 +4,15 @@ import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import codeCampus from '../../images/codecampus.png'
 import rebank from '../../images/rebank.png'
-import useIntersectionObserver from '../../hooks/useIntersectionObserver'
-import { gsap } from "gsap";
 import { componentProps } from '../../types'
 
 
 
 const Rebank = ({openMenu, setOpenMenu}:componentProps) => {
 
-    const pageRef = useRef(null)
-    const [reveal, setReveal] = useState(false);
-    const onScreen = useIntersectionObserver(pageRef, 0.125)
-    const TextRef = useRef(null)
-    const ImageRef = useRef(null)
+    const pageRef =  useRef<HTMLDivElement | null>(null)
+    const TextRef =  useRef<HTMLDivElement | null>(null)
+    const ImageRef = useRef<HTMLDivElement | null>(null)
 
 
   return (

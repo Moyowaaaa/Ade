@@ -3,14 +3,12 @@ import Footer from '../Footer'
 import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import agbado from '../../images/agbadoo.png'
-import useIntersectionObserver from '../../hooks/useIntersectionObserver'
-import { gsap } from "gsap";
 import { componentProps } from '../../types'
 
 const Agbado = ({openMenu, setOpenMenu}:componentProps) => {
-    const pageRef = useRef(null)
-    const TextRef = useRef(null)
-    const ImageRef = useRef(null)
+    const pageRef =  useRef<HTMLDivElement | null>(null)
+    const TextRef =  useRef<HTMLDivElement | null>(null)
+    const ImageRef = useRef<HTMLDivElement | null>(null)
   
   
 
