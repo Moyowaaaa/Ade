@@ -96,12 +96,9 @@ const Home = () => {
               >
                 <div className="wrapper">
                   <MobileNav />
-
                   <HeroSection openMenu={openMenu} setOpenMenu={setOpenMenu} />
-
                   <Projects openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
-
                   <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Alat openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Easy openMenu={openMenu} setOpenMenu={setOpenMenu} />

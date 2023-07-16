@@ -4,7 +4,6 @@ import Navbar from '../Navbar'
 import rightArrow from '../../images/rightarrow.svg'
 import snoozeOff from '../../images/snoozeoff.png'
 import useIntersectionObserver from '../../hooks/useIntersectionObserver'
-import { gsap } from "gsap";
 import { componentProps } from '../../types'
 
 
