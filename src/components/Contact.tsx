@@ -13,15 +13,10 @@ const Contact = ({ openMenu, setOpenMenu }: componentProps) => {
   const contactPageRef = useRef<HTMLDivElement | null>(null);
   const socialRef = useRef<HTMLDivElement | null>(null);
 
-  const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(contactPageRef, 0.125);
 
   useEffect(() => {
-    if (onScreen) setReveal(onScreen);
-  }, [onScreen]);
-
-  useEffect(() => {
-    if (onScreen && reveal) {
+    if (onScreen) {
       const tl = gsap.timeline();
       const ctx = gsap.context(() => {
         tl.from(socialRef.current, {

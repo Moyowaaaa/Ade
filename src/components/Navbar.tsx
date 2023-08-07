@@ -30,9 +30,9 @@ const Navbar = ({ openMenu, setOpenMenu }: componentProps) => {
   return (
     <div className="hidden lg:flex w-full " ref={ref}>
       <div className="flex w-full   justify-between font-[avenir-medium]  ">
-        <a onClick={scrollToHome}>
-          <h1 className="text-lg cursor-pointer">SA</h1>
-        </a>
+        <h1 className="text-lg cursor-pointer" onClick={scrollToHome}>
+          SA
+        </h1>
 
         <button
           className="top-6 right-6 cursor-pointer z-50 text-4xl"

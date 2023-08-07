@@ -54,6 +54,7 @@ const Home = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
   const [fontsLoaded, setFontsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     const fontPromises = [
@@ -84,7 +85,7 @@ const Home = () => {
       {fontsLoaded && (
         <>
           {preloader ? (
-            <Loading />
+            <Loading setIsLoaded={setIsLoaded} isLoaded={isLoaded} />
           ) : (
             <div className="w-full h-full overflow-x-hidden">
               <NavLinks openMenu={openMenu} setOpenMenu={setOpenMenu} />
@@ -96,7 +97,11 @@ const Home = () => {
               >
                 <div className="wrapper">
                   <MobileNav />
-                  <HeroSection openMenu={openMenu} setOpenMenu={setOpenMenu} />
+                  <HeroSection
+                    openMenu={openMenu}
+                    setOpenMenu={setOpenMenu}
+                    isLoaded={isLoaded}
+                  />
                   <Projects openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Finance openMenu={openMenu} setOpenMenu={setOpenMenu} />
                   <Bstop openMenu={openMenu} setOpenMenu={setOpenMenu} />

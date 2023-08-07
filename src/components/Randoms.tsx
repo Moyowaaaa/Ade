@@ -9,11 +9,10 @@ import { componentProps } from "../types";
 const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
   const ref = useRef(null);
   const onScreen = useIntersectionObserver(ref, 0.1);
-  const [reveal, setReveal] = useState(false);
   const RandomsRef = useRef(null);
 
   useEffect(() => {
-    const scrollToProject = setTimeout(() => {
+    const scrollToRandoms = setTimeout(() => {
       if (onScreen) {
         document.querySelector("#nikeAir")?.scrollIntoView({
           behavior: "smooth",
@@ -21,15 +20,11 @@ const Randoms = ({ openMenu, setOpenMenu }: componentProps) => {
       }
     }, 1500);
 
-    return () => clearTimeout(scrollToProject);
+    return () => clearTimeout(scrollToRandoms);
   }, [onScreen]);
 
   useEffect(() => {
-    if (onScreen) setReveal(onScreen);
-  }, [onScreen]);
-
-  useEffect(() => {
-    if (onScreen && reveal) {
+    if (onScreen) {
       const tl = gsap.timeline();
       const ctx = gsap.context(() => {
         tl.fromTo(
