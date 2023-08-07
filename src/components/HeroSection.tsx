@@ -6,25 +6,30 @@ import rightArrow from "../images/rightarrow.svg";
 import { gsap } from "gsap";
 import { componentProps } from "../types";
 
-const HeroSection = ({ openMenu, setOpenMenu }: componentProps) => {
+const HeroSection = ({ openMenu, setOpenMenu, isLoaded }: componentProps) => {
   const tl = gsap.timeline();
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      tl.from(".heroSection", {
-        y: 200,
-        duration: 0.5,
-        opacity: 0,
+    if (isLoaded) {
+      const ctx = gsap.context(() => {
+        gsap.from(".heroSection", {
+          y: 200,
+          duration: 0.5,
+          opacity: 0,
+          delay: 0.5,
+        });
       });
-    });
-    return () => ctx.revert();
-  }, []);
+      return () => ctx.revert();
+    }
+  }, [isLoaded]);
 
   const scrollToProject = () => {
     document.querySelector("#projects")?.scrollIntoView({
       behavior: "smooth",
     });
   };
+
+  console.log({ isLoaded });
 
   return (
     <div
@@ -49,12 +54,13 @@ const HeroSection = ({ openMenu, setOpenMenu }: componentProps) => {
             on your next project.
           </p>
 
-          <a onClick={scrollToProject}>
-            <button className="bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8">
-              Projects
-              <img src={rightArrow} alt="right arrow" />
-            </button>
-          </a>
+          <button
+            className="bg-white text-[#222222] py-3 w-max flex items-center gap-2 px-8"
+            onClick={scrollToProject}
+          >
+            Projects
+            <img src={rightArrow} alt="right arrow" />
+          </button>
         </div>
       </div>
       <Footer />

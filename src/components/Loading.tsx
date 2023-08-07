@@ -1,17 +1,20 @@
 import React from "react";
 import { gsap } from "gsap";
-import { useEffect,useState } from "react";
+import { useEffect, useState, SetStateAction } from "react";
 
-const Loading = () => {
-  const [isLoaded,setIsLoaded] = useState(false)
+type loadingProps = {
+  setIsLoaded: React.Dispatch<SetStateAction<boolean>>;
+  isLoaded: boolean;
+};
 
+const Loading = ({ setIsLoaded, isLoaded }: loadingProps) => {
   const tl = gsap.timeline({
-    onComplete:() => {
-      setIsLoaded(true)
-    }
+    onComplete: () => {
+      setIsLoaded(true);
+    },
   });
 
-  console.log(isLoaded)
+  console.log(isLoaded);
 
   const handleAnimation = () => {
     tl.from(".loader", {

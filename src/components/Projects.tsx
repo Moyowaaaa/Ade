@@ -8,16 +8,11 @@ import { componentProps } from "../types";
 
 const Projects = ({ openMenu, setOpenMenu }: componentProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const [reveal, setReveal] = useState(false);
   const onScreen = useIntersectionObserver(ref, 0.1);
-  const ProjectRef = useRef(null);
+  const ProjectRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (onScreen) setReveal(onScreen);
-  }, [onScreen]);
-
-  useEffect(() => {
-    if (onScreen && reveal) {
+    if (onScreen) {
       const tl = gsap.timeline();
       const ctx = gsap.context(() => {
         tl.fromTo(
