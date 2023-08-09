@@ -29,8 +29,6 @@ const HeroSection = ({ openMenu, setOpenMenu, isLoaded }: componentProps) => {
     });
   };
 
-  console.log({ isLoaded });
-
   return (
     <div
       className="section flex min-h-screen h-screen flex-col lg:px-10 py-4  w-[100vw] "

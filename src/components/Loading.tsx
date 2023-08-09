@@ -14,8 +14,6 @@ const Loading = ({ setIsLoaded, isLoaded }: loadingProps) => {
     },
   });
 
-  console.log(isLoaded);
-
   const handleAnimation = () => {
     tl.from(".loader", {
       opacity: 0,
