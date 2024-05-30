@@ -2,40 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
-    font-family: 'avenir-black';
-    src: local('avenir-black'),
-    url('./assets/fonts/Avenir-Black.otf') format('opentype');
-    font-display: swap;
-  
+@font-face {
+  font-family: "avenir-black";
+  src: local("avenir-black"),
+    url("./assets/fonts/Avenir-Black.otf") format("opentype");
+  font-display: swap;
 }
 
-@font-face{
-    font-family: 'avenir-heavy';
-    src: local('avenir-heavy'),
-    url('./assets/fonts/Avenir-Heavy.otf') format('opentype');
-    font-display: swap;
+@font-face {
+  font-family: "avenir-heavy";
+  src: local("avenir-heavy"),
+    url("./assets/fonts/Avenir-Heavy.otf") format("opentype");
+  font-display: swap;
 }
 
-@font-face{
-    font-family: 'avenir-light';
-    src: local('avenir-light'),
-    url('./assets/fonts/Avenir-Light.otf') format('opentype');
-    font-display: swap;
+@font-face {
+  font-family: "avenir-light";
+  src: local("avenir-light"),
+    url("./assets/fonts/Avenir-Light.otf") format("opentype");
+  font-display: swap;
 }
 
-@font-face{
-    font-family: 'avenir-medium';
-    src: local('avenir-medium'),
-    url('./assets/fonts/Avenir-Medium.otf') format('opentype');
-    font-display: swap;
+@font-face {
+  font-family: "avenir-medium";
+  src: local("avenir-medium"),
+    url("./assets/fonts/Avenir-Medium.otf") format("opentype");
+  font-display: swap;
 }
 
-@media screen and (min-width:1000px) {
-  body{
-    scroll-behavior:smooth
+@media screen and (min-width: 1000px) {
+  body {
+    scroll-behavior: smooth;
   }
-  html{
+  html {
     scroll-behavior: smooth;
   }
   .wrapper {
@@ -51,13 +50,12 @@
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-     overflow-y: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
-    scroll-snap-type: y mandatory; 
-  
+    scroll-snap-type: y mandatory;
   }
-  
+
   .section {
     width: 100vw;
     height: 100vh;
@@ -66,29 +64,24 @@
   }
 }
 
-
-
 .link {
   display: inline-block;
-  padding-bottom:2px;
-  background-image: linear-gradient( #222222,#222222);
+  padding-bottom: 2px;
+  background-image: linear-gradient(#222222, #222222);
   background-position: right -100% bottom 0;
   background-size: 200% 2px;
   background-repeat: no-repeat;
-  transition:
-  background-size 0.3s,
-  background-position 0s 0.3s; /*change after the size immediately*/
+  transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
 }
 
-
 .link:hover {
-  background-position: 100% 100%; 
+  background-position: 100% 100%;
   background-size: 100% 2px;
 }
 
-@media screen and (max-width:600px) {
-  body{
-    scroll-behavior:none
+@media screen and (max-width: 600px) {
+  body {
+    scroll-behavior: none;
   }
   .wrapper {
     display: flex;
@@ -96,74 +89,90 @@
   }
 }
 
-body{
-    background:#222222;
-    color:white;
-    overflow-x:hidden
+body {
+  background: #222222;
+  color: white;
+  overflow-x: hidden;
 }
 
 html.has-scroll-smooth {
-    overflow: hidden; }
-  
-  html.has-scroll-dragging {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-  
-  .has-scroll-smooth body {
-    overflow: hidden; }
-  
-  .has-scroll-smooth [data-scroll-container] {
-    min-height: 100vh; }
-  
-  [data-scroll-direction="horizontal"] [data-scroll-container] {
-    height: 100vh;
-    display: inline-block;
-    white-space: nowrap; }
-  
-  [data-scroll-direction="horizontal"] [data-scroll-section] {
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
-    height: 100%; }
-  
-  .c-scrollbar {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 11px;
-    height: 100%;
-    transform-origin: center right;
-    transition: transform 0.3s, opacity 0.3s;
-    opacity: 0; }
-    .c-scrollbar:hover {
-      transform: scaleX(1.45); }
-    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
-      opacity: 1; }
-    [data-scroll-direction="horizontal"] .c-scrollbar {
-      width: 100%;
-      height: 10px;
-      top: auto;
-      bottom: 0;
-      transform: scaleY(1); }
-      [data-scroll-direction="horizontal"] .c-scrollbar:hover {
-        transform: scaleY(1.3); }
-  
-  .c-scrollbar_thumb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: black;
-    opacity: 0.5;
-    width: 7px;
-    border-radius: 10px;
-    margin: 2px;
-    cursor: -webkit-grab;
-    cursor: grab; }
-    .has-scroll-dragging .c-scrollbar_thumb {
-      cursor: -webkit-grabbing;
-      cursor: grabbing; }
-    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
-      right: auto;
-      bottom: 0; }
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+[data-scroll-direction="horizontal"] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
+}
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
+}
